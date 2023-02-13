@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Droom Media Influencer Marketing Platform for Brands and Influencers.Get Influencers from categories like Fashion, Fitness, Luxury, Lifestyle, Food, Travel, Beauty, Technology, Makeup Artist, Model, Actor, Automotive, Entertainment and many more." />
+    <meta property="og:title" content="Droom Media Influencer Marketing Platform for Brands and Influencers" />
+    <meta property="og:type" content="Influencer & Brands Ecommerce" />
+    <meta property="og:description" content="Droom Media Influencer Marketing Platform for Brands and Influencers.Get Influencers from categories like Fashion, Fitness, Luxury, Lifestyle, Food, Travel, Beauty, Technology, Makeup Artist, Model, Actor, Automotive, Entertainment and many more." />
+    <meta property="og:url" content="https://www.droommedia.com/" />
+    <meta property="og:image" content="https://droommedia.com/images/droommedia.png" />
+    <!--<meta property="fb:pages" content="132395186860155" />-->
+    <meta property="fb:app_id" content="2457466877823221" />
+
+    <title>My Accounts</title>
+    
+    
+    
+    <link href="./Content/dmapp/app.css" rel="stylesheet">
+    <link href="./Content/dmapp/home.css" rel="stylesheet">
+    <link href="./Content/dmapp/wheel-campaign.css" rel="stylesheet" />
+    <link href="./Content/Site.css" rel="stylesheet">
+    <link href="./Content/bootstrap_plugin/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="./Content/bootstrap_plugin/bootstrap-table.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="./Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="./Scripts/jquery-1.10.2.js"></script>
+
+</head>
+<body class="skin-frontend">
+    <div id="app">
+        <header>
+            <section class="main-header">
+    <nav class="navbar navbar-fixed-top">
+        <!-- Logo -->
+        <div class="navbar-header">
+            <a href="/" class="logo navbar-brand hidden-xs">
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><img src="./images/logo.png" class="img-responsive" alt="logo"></span>
+            </a>
+            <a href="/" class="navbar-brand hidden-lg hidden-md hidden-sm">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><img src="./images/logo-small.png" class="img-responsive" alt="logo"></span>
+            </a>
+            <button type="button" class="navbar-toggle sidebar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <div class="navbar-right">       
+                <ul class="nav navbar-nav">
+                    <li><select class="header-dropdown" id="AppSelectedCurrency" name="AppSelectedCurrency" style="display: none"><option value="USD">USD</option>
+<option selected="selected" value="INR">INR</option>
+</select></li>
+                </ul>         
+                
+        <ul class="nav navbar-nav">
+                <li><a href="/Influencer/AddAccount" title="Attach Account">Attach Account</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Orders">
+                        Orders
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Order/MyOrders">My Orders</a></li>
+                        <li><a href="/PaymentHistory">Payment History</a></li>
+                    </ul>
+                </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Campaigns">
+                    Campaigns
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                        <li><a href="/Influencer/Campaigns">My Campaigns</a></li>
+                        <li><a href="/Influencer/ApplyForCampaigns">Apply for Campaigns</a></li>
+                </ul>
+            </li>
+
+                <li><a href="/Influencer" title="Dashboard">Dashboard</a></li>                
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="My Profile">
+                    <span class="icon-size-header"><i class="fa fa-user"></i></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li style="max-width:180px">
+                        <a class="ellipsisOnText" href="/MyProfile">
+                            <span class="nameAvatar">SG</span>
+                            <span>SAKSHI</span>
+                        </a>
+                    </li>
+                    <li><a href="/MyProfile/AddressDetails">Address Book</a></li>
+                    <li><a href="/MyProfile/PaymentDetails">Payment Modes</a></li>
+                    <li><a href="/Account/ChangePassword">Change Password</a></li>
+                    <li><a href="/Account/SignOut">Sign Out</a></li>
+                </ul>
+            </li>
+        </ul>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+        </header>
+        <div id="home" style="margin-top:50px;">
+            <div class="">
+                
+
+
+<div class="container-fluid pageBackground">
+    <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 contentBackground">
+        <div class="content-header">
+            <h1 style="display:inline-block">My Accounts</h1>
+            <a style="display:inline-block" href="/Influencer" title="Dashboard" class="pull-right">
+                <i class="fa fa-long-arrow-left"></i> Back
+            </a>
+            <hr />
+        </div>
+        <div class="content">
+            <div id="infAccountInfoDiv">
+                <div class="row">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-4">
+                                <a class="btn btn-link" href="/Influencer/AddAccount">
+                                    <i class="fa fa-plus-square"></i> Attach Influencer Account
+                                </a>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <div class="col-md-4 col-sm-4">
+                                    <select class="form-control" id="drpPlatform" name="drpPlatform"><option value="">Select All</option>
+<option value="1">Facebook</option>
+<option value="2">Instagram</option>
+<option value="3">LinkedIn</option>
+<option value="4">Twitter</option>
+<option value="5">Youtube</option>
+<option value="6">TikTok</option>
+<option value="7">Twitch</option>
+<option value="8">Snapchat</option>
+<option value="9">Spotify</option>
+<option value="10">Amazon</option>
+<option value="11">Podcast</option>
+<option value="12">Medium</option>
+<option value="13">SoundCloud</option>
+</select>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="accountInfo">
+                        <div class="row">
+            <div class="col-md-4 col-sm-6 allPlatform platform_2">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/Instagram_Sara_20200802-164630.JPG" class="img-responsive" alt="Sara">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/1" title="View Account">
+                                Sara
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <i class="fa fa-instagram text-danger" title="Instagram"></i>
+
+                            Followers: 12K
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $10.00</p>
+                        <p>Last Updated: 
+                        08 Aug 2022</p>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/1">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/1">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 allPlatform platform_1">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/Facebook_sakshi_20200724-115505.JPG" class="img-responsive" alt="sakshi">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/23" title="View Account">
+                                sakshi
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <i class="fa fa-facebook-square text-primary" title="Facebook"></i>
+
+                            Followers: 1
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $12.00</p>
+                        <p>Last Updated: 
+                        08 Aug 2022</p>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/23">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/23">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 allPlatform platform_3">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/LinkedIn_sakshi test brands_20200727-210751.png" class="img-responsive" alt="sakshi test brands">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/27" title="View Account">
+                                sakshi test brands
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <i class="fa fa-linkedin-square text-primary" title="LinkedIn"></i>
+
+                            Followers: 1
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $1.00</p>
+                        <p>Last Updated: 
+                        08 Aug 2022</p>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/27">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/27">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 allPlatform platform_1">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/Facebook_Sakshi fb_20200801-154809.JPG" class="img-responsive" alt="Sakshi fb">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/28" title="View Account">
+                                Sakshi fb
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <i class="fa fa-facebook-square text-primary" title="Facebook"></i>
+
+                            Followers: 1
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $1.00</p>
+                        <p>Last Updated: 
+                        20 Oct 2020</p>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/28">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/28">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 allPlatform platform_6">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/TikTok_sakshi test manager_20200724-212145.JPG" class="img-responsive" alt="sakshi test manager">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/24" title="View Account">
+                                sakshi test manager
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <strong>TikTok</strong>
+
+                            Followers: 1,000
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $20.00</p>
+                        <p>Last Updated: 
+                        24 Sep 2020</p>
+
+                            <p>
+                                Active:
+                                <span style="color:red">No</span>
+                                <a href="javascript:void(0)" data-toggle="popover" data-content="This account is currently disabled. Please contact our Support Team." data-placement="top" data-trigger="hover">
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </p>
+
+                            <p>
+                                Verification:
+
+                                Pending
+                                    <a href="javascript:void(0)" class="btnPendingStatus" data-toggle="popover" data-content="Team will update the status after verifying the details." data-placement="top" data-trigger="hover">
+                                        <i class="fa fa-info-circle"></i>
+                                    </a>
+                            </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/24">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/24">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 allPlatform platform_2">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/Instagram_Sakshi insta_20200801-155347.jpeg" class="img-responsive" alt="Sakshi insta">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/29" title="View Account">
+                                Sakshi insta
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <i class="fa fa-instagram text-danger" title="Instagram"></i>
+
+                            Followers: 13K
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $1.00</p>
+                        <p>Last Updated: 
+                        24 Sep 2020</p>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/29">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/29">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 allPlatform platform_1">
+                <div class="listcamp" style="min-width: 300px; max-width: 300px;">
+                    <div class="instaimg">
+                        <img src="./images/influencer/1/Facebook_Sara_20200923-195426.JPG" class="img-responsive" alt="Sara">
+                    </div>
+                    <div class="userdetail">
+                        <p class="ellipsisOnText">
+                            <a href="/Influencer/ViewAccount/35" title="View Account">
+                                Sara
+                            </a>
+                        </p>
+                        <p class="ellipsisOnText">#Fashion </p>
+                        <p class="ellipsisOnText">
+                                    <i class="fa fa-facebook-square text-primary" title="Facebook"></i>
+
+                            Followers: 15K
+                            &nbsp;
+                            
+                        </p>
+                        <p>Approx. Price: 
+                        $10.00</p>
+                        <p>Last Updated: 
+                        24 Sep 2020</p>
+
+
+                            <p>
+                                Verification:
+
+                                Pending
+                                    <a href="javascript:void(0)" class="btnPendingStatus" data-toggle="popover" data-content="Team will update the status after verifying the details." data-placement="top" data-trigger="hover">
+                                        <i class="fa fa-info-circle"></i>
+                                    </a>
+                            </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a class="btn btn-link" href="/Influencer/EditAccount/35">
+                                <i class="fa fa-pencil"></i> Edit
+                            </a> |
+                            <a class="btn btn-link" href="/Influencer/ViewAccount/35">
+                                View
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<div id="alertmessage">
+    
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('[data-toggle="popover"]').popover();
+
+        $(document).on('click', '.btnRejectedStatus', function () {
+            //alert('btnRejectedStatus clicked');
+            var id = $(this).attr("id");
+            var element = $(this);
+            $.ajax({
+                type: "GET",
+                url: '/Helper/GetRejectionReason',
+                data: { referenceID: id, logType: 'InfluencerAdminApproval' },
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    element.popover({
+                        //container: 'body',
+                        //title: 'Reason',
+                        content: (response) ? response : "Rejected",
+                        placement: 'top'
+                    }).popover('show');
+                },
+                error: function (x) {
+                    alert("Error occured!!");
+                }
+            });
+        });
+
+        
+
+        $('body').on('mouseleave', '.popover', function () {
+            $(this).hide();
+        });
+
+    });
+
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+            </div>
+            <div id="popupmessage">
+            </div>
+            <div id="loadermessage" style="display: none">
+                <div id="LoaderModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="false">
+    <div class="modal-dialog" style="width:150px">        
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="loader"></div>
+                <div class="text-center"><b>Please wait...</b></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+            <div id="alertmessage">
+                
+
+
+
+
+
+            </div>
+        </div>
+        <footer>
+            <section class="footers">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Company</h3>
+                <ul>
+                    
+                    <li><a href="javascript:void(0)" class="contactPopup">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/TermsAndConditions" target="_blank">Terms and Conditions</a></li>
+                    <li><a href="/PrivacyPolicy" target="_blank">Privacy Policy</a></li>
+                    <li><a href="/Faqs" target="_blank">FAQ&#39;s</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Follow Us</h3>
+                <div>
+                    <a href="https://www.facebook.com/droommedia/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://twitter.com/droommedia" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/droom-media/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/droommedia/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:dm@droommedia.com"><i class="fa fa-envelope"></i> Brand: dm@droommedia.com</a></li>
+                    <li><a href="mailto:collab@droommedia.com"><i class="fa fa-envelope"></i> Influencer: collab@droommedia.com</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=918800798484&amp;text=&amp;source=&amp;data=" target="_blank"><i class="fa fa-whatsapp" style="color: green;"></i> Call/Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <div class="row">
+        <p class="text-center">© All rights reserved by DroomMedia</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 div-payment-box">            
+                <ul class="ul-payment-box">
+                    <li><i class="fa fa-cc-visa fa-2x" style="color: #0157a2"></i></li>
+                    <li><i class="fa fa-cc-mastercard fa-2x" style="color: #0a3a82"></i></li>                    
+                    <li><i class="fa fa-cc-paypal fa-2x" style="color: #253b80"></i></li>
+                    <li><i class="fa fa-cc-stripe fa-2x" style="color: #00afe1"></i></li>
+                </ul>            
+        </div>
+    </div>   
+</section>
+        </footer>
+    </div>
+    <script src="./Scripts/bootstrap.js"></script>
+<script src="./Scripts/respond.js"></script>
+
+    <script src="./Scripts/jquery.validate.js"></script>
+<script src="./Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="./Scripts/jquery.unobtrusive-ajax.js"></script>
+
+    
+    <script type="text/javascript" src="./Scripts/dmapp/appDM.js"></script>
+    <script type="text/javascript" src="./Scripts/bootstrap_plugin/sweetalert.min.js"></script>
+    <script src="./Scripts/bootstrap_plugin/bootstrap-checkbox.js"></script>
+<script src="./Scripts/bootstrap_plugin/bootstrap-multiselect.js"></script>
+<script src="./Scripts/bootstrap_plugin/bootstrap-table.js"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            hideAppLoader();
+
+            $('#drpPlatform').change(function () {
+                var platform = $(this).val();
+                filterOnPlatformDropdown(platform);
+            });
+
+            function filterOnPlatformDropdown(platform) {
+                if (platform == "") {
+                    $(".allPlatform").show();
+                }
+                else {
+                    $(".allPlatform").hide();
+                    $(".platform_" + platform).show();
+                }
+            }
+
+            $(document).on('click', '.btnUpdateAccountIsActive', function () {
+                //alert('btnUpdateAccountIsActive clicked');
+                if ($(this).hasClass('disableInfAccount')) {
+                    var ans = confirm("Are you sure you want to disable this account?");
+                    var isActive = false;
+                }
+                else {
+                    var ans = true;
+                    var isActive = true;
+                }
+                if (ans) {
+                    showAppLoader();
+                    var id = $(this).attr("id");
+                    $.ajax({
+                        type: "POST",
+                        url: '/Influencer/UpdateAccountIsActive',
+                        data: { accountID: id, isActive: isActive },
+                        //contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            hideAppLoader();
+                            $('#accountInfo').html(response);
+                            filterOnPlatformDropdown($("#drpPlatform").val());
+                        },
+                        error: function (x) {
+                            hideAppLoader();
+                            alert("Error occured!!");
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("document ready");
+            $('.contactPopup').click(function () {
+                //alert("contact popup");
+                $.ajax({
+                    type: "GET",
+                    url: '/Home/Contact',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        $('#popupmessage').html(response);
+                    },
+                    error: function () {
+                        alert("Error occured!!");
+                    }
+                });
+            });
+
+            $(document).on('click', '.loginPopup', function () {
+                //alert("login popup");
+                OpenLoginPopup();
+            });
+
+            $('.registerPopup').click(function () {
+                //alert("register popup");
+                OpenRegisterPopup();
+            });
+
+            $(document).on('change', '#AppSelectedCurrency', function () {
+                var selectedCurrency = $(this).val();
+                $.ajax({
+                    type: "GET",
+                    url: '/Home/SetCurrency',
+                    data: { currency: selectedCurrency },
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        
+                    },
+                    error: function () {
+                        alert("Error occured!!");
+                    }
+                });
+            });
+        });
+
+        function OpenRegisterPopup(roleType) {
+            $.ajax({
+                type: "GET",
+                url: '/Account/RegisterPopup',
+                data: { roleType: roleType },
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    $('#popupmessage').html(response);
+                },
+                error: function (x) {
+                    alert("Error occured!!");
+                }
+            });
+        }
+
+        function OpenLoginPopup() {
+            $.ajax({
+                type: "GET",
+                url: '/Account/LoginPopup',
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    $('#popupmessage').html(response);
+                },
+                error: function (x) {
+                    alert("Error occured!!");
+                }
+            });
+        }
+    </script>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"d79e0fc15a9f4e84a7b9e83c33792275"}
+</script>
+<script type="text/javascript" src="http://localhost:1513/6a8562aba6744b94a61a22c03f9ef441/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>

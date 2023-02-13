@@ -1,0 +1,850 @@
+.campaigninfluencer {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  background: "{{asset('images/campaign-banners-2.jpg')}}";
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 565px;
+  border-radius: 10px;
+  height: 200px;
+}
+.campaigninfluencer #bank-info p {
+  margin-bottom: 5px;
+}
+.campaigninfluencer .manage {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  text-shadow: 2px 2px 2px #000000;
+}
+.campaigninfluencer .pics {
+  position: relative;
+  left: 0;
+}
+.campaigninfluencer .pics .pics1,
+.campaigninfluencer .pics .pics2,
+.campaigninfluencer .pics .pics3 {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  width: 168px;
+  overflow: hidden;
+}
+.campaigninfluencer .pics .pics1 .likes,
+.campaigninfluencer .pics .pics2 .likes,
+.campaigninfluencer .pics .pics3 .likes {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: red;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 4px;
+  width: 122px;
+}
+.campaigninfluencer .pics .pics1 .likes span,
+.campaigninfluencer .pics .pics2 .likes span,
+.campaigninfluencer .pics .pics3 .likes span {
+  width: 50%;
+  float: left;
+  padding: 0 5px 0 0;
+}
+.campaigninfluencer .pics .pics1 .likes span:last-child,
+.campaigninfluencer .pics .pics2 .likes span:last-child,
+.campaigninfluencer .pics .pics3 .likes span:last-child {
+  margin-right: 0;
+}
+.campaigninfluencer .pics .pics1 {
+  top: 14px;
+  left: 25px;
+  z-index: 9;
+}
+.campaigninfluencer .pics .pics2 {
+  top: -50px;
+  left: 175px;
+  z-index: 10;
+}
+.campaigninfluencer .pics .pics3 {
+  top: -125px;
+  left: 50px;
+  z-index: 11;
+}
+.social-facebook,
+.social-tumbler,
+.social-twitter,
+.social-linkedin,
+.social-pinterest {
+  margin-bottom: 10px;
+}
+.social-facebook h4 {
+  font-size: 16px;
+  color: #4e71a8;
+}
+.social-facebook a,
+.social-facebook i {
+  font-size: 50px;
+}
+.social-facebook .btn {
+  background: #4e71a8;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: none;
+}
+.social-facebook .btn:hover {
+  background: #3e5a85;
+  border: none;
+}
+.social-tumbler h4 {
+  font-size: 16px;
+  color: #364559;
+}
+.social-tumbler i {
+  font-size: 50px;
+}
+.social-tumbler .btn {
+  background: #364559;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: none;
+}
+.social-tumbler .btn:hover {
+  background: #232c39;
+  border: none;
+}
+.social-twitter h4 {
+  font-size: 16px;
+  color: #1cb7eb;
+}
+.social-twitter i {
+  font-size: 50px;
+}
+.social-twitter .btn {
+  background: #1cb7eb;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: none;
+}
+.social-twitter .btn:hover {
+  background: #1196c3;
+  border: none;
+}
+.social-linkedin h4 {
+  font-size: 16px;
+  color: #0388c3;
+}
+.social-linkedin i {
+  font-size: 50px;
+}
+.social-linkedin .btn {
+  background: #0388c3;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: none;
+}
+.social-linkedin .btn:hover {
+  background: #026591;
+  border: none;
+}
+.social-pinterest h4 {
+  font-size: 16px;
+  color: #ca3737;
+}
+.social-pinterest i {
+  font-size: 50px;
+}
+.social-pinterest .btn {
+  background: #ca3737;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: none;
+}
+.social-pinterest .btn:hover {
+  background: #a32b2b;
+  border: none;
+}
+.social-icons .fb {
+  font-size: 50px;
+  color: #4e71a8;
+}
+.social-icons .fb.fb-disable {
+  color: #aaa;
+}
+.social-icons .tm {
+  font-size: 50px;
+  color: #364559;
+}
+.social-icons .tm.tm-disable {
+  color: #aaa;
+}
+.social-icons .tw {
+  font-size: 50px;
+  color: #1cb7eb;
+}
+.social-icons .tw.tw-disable {
+  color: #aaa;
+}
+.social-icons .lk {
+  font-size: 50px;
+  color: #0388c3;
+}
+.social-icons .lk.lk-disable {
+  color: #aaa;
+}
+.social-icons instagram .pt {
+  font-size: 50px;
+  color: #ca3737;
+}
+.social-icons instagram .pt.pt-disable {
+  color: #aaa;
+}
+.social-icons .it {
+  font-size: 50px;
+  color: #444444;
+}
+.social-icons .it.it-disable {
+  color: #aaa;
+}
+.social-icons .yt {
+  font-size: 50px;
+  color: #ac030e;
+}
+.social-icons .yt.it-disable {
+  color: #aaa;
+}
+.campaign {
+  background: #fff;
+  padding: 10px;
+  width: 16%;
+  float: left;
+  margin: 0 20px 30px 0;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 10px;
+ /** -ms-user-select: none;
+      user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;*/
+  cursor: hand;
+  cursor: pointer;
+  text-align: center;
+}
+.campaign img {
+  border-radius: 5px 5px 0 0;
+}
+.campaign .campaign-title {
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: normal;
+  border-radius: 0 0 5px 5px;
+}
+#campaignform {
+  background: red;
+  color: #fff;
+  padding: 10px;
+  width: 140px;
+  float: left;
+  margin: 0 10px 30px 0;
+  position: relative;
+  border-radius: 10px;
+}
+#campaignform .campaign-title {
+  font-weight: normal;
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+#campaignform .campaign-title i {
+  font-size: 65px;
+  color: #ddd;
+}
+#campaignform .campaign-title:hover i {
+  color: #fff;
+}
+.attchwheel {
+  background: red;
+  color: #fff;
+  padding: 10px;
+  float: left;
+  margin: 0 10px 30px 0;
+  position: relative;
+  border-radius: 5px;
+}
+.attchwheel:hover,
+.attchwheel:focus {
+  color: #fff;
+}
+.attchwheel .campaign-title {
+  font-weight: normal;
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.attchwheel .campaign-title i {
+  font-size: 65px;
+  color: #ddd;
+}
+.attchwheel .campaign-title:hover i {
+  color: #fff;
+}
+.content h1 {
+  font-size: 16px;
+}
+.content .row .col-xs-12 table {
+  background: #fff;
+}
+.modal .modal-dialog {
+  border-radius: 10px;
+}
+.modal-body {
+  overflow: hidden;
+}
+.modal-content {
+  border-radius: 10px;
+}
+a.dismiss i {
+  color: #c4020f;
+  font-size: 16px;
+}
+.searchformresu {
+  width: 100%;
+  float: left;
+  padding: 0 0 100px 0;
+  background: url(/images/homeformbg.jpg?e676b60bd8bbc26e714e723428239a75) top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.searchformresu h1.formhead {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+.searchformresu #serach-influncer-form {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 0 0% 50px;
+  border: 4px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.searchformresu #serach-influncer-form .form-group {
+  margin-bottom: 20px;
+}
+.searchformresu #serach-influncer-form label {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.formcontainer {
+  position: relative;
+  margin-bottom: 10px;
+}
+.formcontainer h1 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #c4020f;
+}
+.formcontainer .formhovers {
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 35px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.hrs {
+  font-size: 14px;
+  text-align: left;
+  overflow: hidden;
+}
+.hrs .hrs-child {
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.hrs .hrs-child .textt {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+}
+.hrs .hrs-child .hrs-right {
+  width: 100%;
+  float: left;
+  margin-top: 8px;
+}
+.hrs .hrs-child .hrs-right input[type="text"] {
+  float: left;
+  height: 35px !important;
+  border: 1px solid #ddd;
+  text-align: left;
+  background: #fff;
+  padding-left: 10px !important;
+}
+.hrs .hrs-child .totaltextt {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  float: left;
+}
+.hrs .hrs-child .totalhrs-right {
+  width: 100%;
+  float: left;
+  color: #c4020f;
+  font-size: 20px;
+  text-align: center;
+}
+.payment {
+  background: #c4020f;
+  -webkit-box-shadow: inset 2px 0 14px 11px #ab020d;
+          box-shadow: inset 2px 0 14px 11px #ab020d;
+  padding: 50px 0;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+.payment h1 {
+  font-size: 25px;
+}
+.table-inverse {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(#e1e1e1));
+  background-image: linear-gradient(to top, #f0f0f0, #e1e1e1);
+}
+.table-inverse tr th {
+  vertical-align: middle !important;
+}
+.table > caption + thead > tr:first-child > td,
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td,
+.table > thead:first-child > tr:first-child > th {
+  border-top: 4px solid #92010b;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-color: #bdbdbd;
+}
+#red {
+  margin-top: 15px;
+}
+.srchbtn {
+  margin-top: 25px;
+}
+.hurs-cnt {
+  margin-bottom: 20px;
+}
+.campaign-id {
+  -webkit-box-shadow: inset 0 0 20px #1a1a1a;
+  box-shadow: inset 0 0 20px #1a1a1a;
+  margin-left: 15px;
+  cursor: hand;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background: #c4020f;
+  border-radius: 5px 0px 0 5px;
+  float: left;
+  padding: 10px 10px 0;
+  color: #fff;
+}
+.campaign-id:hover {
+  -webkit-box-shadow: inset 0 0 40px #1a1a1a;
+  box-shadow: inset 0 0 40px #1a1a1a;
+}
+.campaign-id i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.pay-now {
+  background: #fff;
+  color: #c4020f;
+  margin-top: 20px;
+  cursor: hand;
+  cursor: pointer;
+}
+.pay-now:hover {
+  background: #fff;
+  color: #c4020f;
+}
+.campaign-name {
+  background: #fff;
+  border-width: 2px 2px 2px 0;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 0 10px 0 10px;
+  margin-bottom: 15px;
+  border-radius: 0 5px 5px 0px;
+  float: left;
+  padding: 6px 10px 0;
+}
+.expand {
+  display: none;
+}
+.fancy-checkbox input[type="checkbox"] {
+  display: none;
+}
+.fancy-checkbox span:before {
+  font-family: "FontAwesome";
+  font-style: normal;
+  width: 1em;
+  height: 1em;
+  content: '\F0C8';
+  margin-right: .3em;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  font-size: 25px;
+  color: #ddd;
+}
+.fancy-checkbox input[type="checkbox"]:checked ~ span:before {
+  content: '\F14A';
+  color: #70f163;
+}
+.fancy-checkbox.filter input[type="checkbox"] {
+  display: none;
+}
+.fancy-checkbox.filter span:before {
+  font-family: "FontAwesome";
+  font-style: normal;
+  width: 1em;
+  height: 1em;
+  content: '\F0C8';
+  margin-right: .3em;
+  position: relative;
+  left: 10px;
+  top: 5px;
+  font-size: 25px;
+  color: #888888;
+}
+.fancy-checkbox.filter input[type="checkbox"]:checked ~ span:before {
+  content: '\F14A';
+  color: green;
+}
+@media screen and (max-width: 1200px) {
+  .campaign {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .manage {
+    margin-top: 20px !important;
+  }
+  .campaigninfluencer {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .campaign {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .campaign {
+    width: 20%;
+  }
+  .box-media {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 0 20px 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .campaign {
+    width: 44%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .campaigninfluencer {
+    height: auto;
+  }
+  .pics1,
+  .pics2,
+  .pics3 {
+    margin-bottom: 20px;
+  }
+  .pics1,
+  .pics2,
+  .pics3,
+  .campaigninfluencer .pics .pics1 .likes,
+  .campaigninfluencer .pics .pics2 .likes,
+  .campaigninfluencer .pics .pics3 .likes,
+  .campaigninfluencer .pics .pics1 .likes span,
+  .campaigninfluencer .pics .pics2 .likes span,
+  .campaigninfluencer .pics .pics3 .likes span {
+    position: static !important;
+    width: 100% !important;
+    border-radius: 0px;
+  }
+  .campaigninfluencer .pics .pics1 .likes span,
+  .campaigninfluencer .pics .pics2 .likes span,
+  .campaigninfluencer .pics .pics3 .likes span {
+    float: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .campaign,
+  #campaignform {
+    width: 100%;
+  }
+}
+.select2-container--default .select2-selection--single,
+.select2-selection .select2-selection--single {
+  border: 1px solid #d2d6de;
+  border-radius: 0;
+  padding: 6px 12px;
+  height: 34px;
+}
+@media screen and (max-width: 768px) {
+  .select-mg {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  table.table.table-no-more {
+    width: 100%;
+  }
+  /* Force table to not be like tables anymore */
+  table.table.table-no-more,
+  table.table.table-no-more thead,
+  table.table.table-no-more tbody,
+  table.table.table-no-more th,
+  table.table.table-no-more td,
+  table.table.table-no-more tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  table.table.table-no-more thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  table.table.table-no-more td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding: 0 0 0 30% !important;
+    white-space: normal !important;
+    text-align: left;
+  }
+  table.table.table-no-more td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 25%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+  /*
+    Label the data
+    */
+  table.table.table-no-more td:before {
+    content: attr(data-title);
+  }
+}
+.paymentstrip {
+  position: fixed;
+  bottom: 0;
+  -webkit-box-shadow: 0 -2px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -2px 5px 0px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  font-size: 12px;
+  width: 83%;
+  padding: 5px 10px 10px;
+}
+.paymentstrip .units {
+  float: right;
+  color: #ac030e; 
+  margin-right: 20px;
+  font-size: 20px;
+}
+.paymentstrip .btn-danger {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.inactive .activate {
+  display: block;
+  position: absolute !important;
+  top: 10px;
+  left: 25px;
+  z-index: 99;
+}
+.inactive .listcamp {
+  opacity: 0.5;
+}
+.inactive .listcamp .active {
+  position: absolute !important;
+  top: 10px;
+  left: 25px;
+  display: none;
+}
+.activate {
+  display: none;
+}
+.listcamp {
+  min-height: 285px;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.listcamp .influprice {
+  position: absolute;
+  top: 16px;
+  background: #c4020f;
+  padding: 7px 10px;
+  right: 31px;
+  color: #fff;
+}
+.listcamp .listcampdays {
+  padding: 0 7px 7px;
+  overflow: hidden;
+  font-weight: bold;
+}
+.listcamp .listcampdays .select2-selection--single {
+  padding: 0;
+  height: 25px;
+}
+.listcamp label {  
+  /*cursor: pointer;*/
+  padding-bottom: 5px;
+  background: #fff;
+  margin: 0;
+}
+.listcamp label div.icheckbox_flat-green,
+.listcamp label .active,
+.listcamp label .edit {
+  position: absolute !important;
+  top: 10px;
+  left: 25px;
+}
+.listcamp label .edit {
+  left: 65px;
+}
+.listcamp:hover {
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+.listcamp .instaimg {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.listcamp .instaimg img {
+  border-radius: 10px;
+}
+.listcamp .userdetail {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+}
+.listcamp .userdetail button {
+  font-size: 12px;
+  padding: 5px;
+}
+.listcamp .userdetail input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+.listcamp .userdetail p {
+  margin-bottom: 5px;
+}
+.listcamp .userdetail p:first-child {
+  color: #c4020f;
+}
+.listcamp .userdetail p {
+  color: #2c2c2c;
+}
+.infllist {
+  margin-top: 20px;
+}
+.infllist h3 {
+  margin: 0;
+}
+.createform h1 {
+  margin: 0 0 10px;
+  color: #c4020f;
+  font-weight: bold;
+}
+.listinfluencer h1 {
+  margin: 0 0 10px;
+  color: #c4020f;
+  font-weight: bold;
+}
+.btns-brand-srch {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,fcfff4+69,f2f2e8+100 */
+  background: #fcfff4;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfff4), color-stop(69%, #fcfff4), to(#f2f2e8));
+  background: linear-gradient(to bottom, #fcfff4 0%, #fcfff4 69%, #f2f2e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#f2f2e8', GradientType=0);
+  /* IE6-9 */
+  color: #2c2c2c;
+  display: block;
+}
+.btns-brand-srch p {
+  font-size: 25px;
+}
+.seprate {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  position: relative;
+  height: 50px;
+  width: 40%;
+  margin: auto;
+}
+.seprate span {
+  position: absolute;
+  background: #fff;
+  top: -29px;
+  padding: 10px;
+  color: #ac030e;
+}
+.formfix {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

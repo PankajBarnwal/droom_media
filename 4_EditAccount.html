@@ -1,0 +1,3122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Droom Media Influencer Marketing Platform for Brands and Influencers.Get Influencers from categories like Fashion, Fitness, Luxury, Lifestyle, Food, Travel, Beauty, Technology, Makeup Artist, Model, Actor, Automotive, Entertainment and many more." />
+    <meta property="og:title" content="Droom Media Influencer Marketing Platform for Brands and Influencers" />
+    <meta property="og:type" content="Influencer & Brands Ecommerce" />
+    <meta property="og:description" content="Droom Media Influencer Marketing Platform for Brands and Influencers.Get Influencers from categories like Fashion, Fitness, Luxury, Lifestyle, Food, Travel, Beauty, Technology, Makeup Artist, Model, Actor, Automotive, Entertainment and many more." />
+    <meta property="og:url" content="https://www.droommedia.com/" />
+    <meta property="og:image" content="https://droommedia.com/images/droommedia.png" />
+    <!--<meta property="fb:pages" content="132395186860155" />-->
+    <meta property="fb:app_id" content="2457466877823221" />
+
+    <title>Edit Account</title>
+    
+    
+    
+    <link href="./Content/dmapp/app.css" rel="stylesheet">
+    <link href="./Content/dmapp/home.css" rel="stylesheet">
+    <link href="./Content/dmapp/wheel-campaign.css" rel="stylesheet" />
+    <link href="./Content/Site.css" rel="stylesheet">
+    <link href="./Content/bootstrap_plugin/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="./Content/bootstrap_plugin/bootstrap-table.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="./Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="./Scripts/jquery-1.10.2.js"></script>
+
+</head>
+<body class="skin-frontend">
+    <div id="app">
+        <header>
+            <section class="main-header">
+    <nav class="navbar navbar-fixed-top">
+        <!-- Logo -->
+        <div class="navbar-header">
+            <a href="/" class="logo navbar-brand hidden-xs">
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><img src="./images/logo.png" class="img-responsive" alt="logo"></span>
+            </a>
+            <a href="/" class="navbar-brand hidden-lg hidden-md hidden-sm">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><img src="./images/logo-small.png" class="img-responsive" alt="logo"></span>
+            </a>
+            <button type="button" class="navbar-toggle sidebar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <div class="navbar-right">       
+                <ul class="nav navbar-nav">
+                    <li><select class="header-dropdown" id="AppSelectedCurrency" name="AppSelectedCurrency" style="display: none"><option value="USD">USD</option>
+<option selected="selected" value="INR">INR</option>
+</select></li>
+                </ul>         
+                
+        <ul class="nav navbar-nav">
+                <li><a href="/Influencer/AddAccount" title="Attach Account">Attach Account</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Orders">
+                        Orders
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Order/MyOrders">My Orders</a></li>
+                        <li><a href="/PaymentHistory">Payment History</a></li>
+                    </ul>
+                </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Campaigns">
+                    Campaigns
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                        <li><a href="/Influencer/Campaigns">My Campaigns</a></li>
+                        <li><a href="/Influencer/ApplyForCampaigns">Apply for Campaigns</a></li>
+                </ul>
+            </li>
+
+                <li><a href="/Influencer" title="Dashboard">Dashboard</a></li>                
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="My Profile">
+                    <span class="icon-size-header"><i class="fa fa-user"></i></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li style="max-width:180px">
+                        <a class="ellipsisOnText" href="/MyProfile">
+                            <span class="nameAvatar">SG</span>
+                            <span>SAKSHI</span>
+                        </a>
+                    </li>
+                    <li><a href="/MyProfile/AddressDetails">Address Book</a></li>
+                    <li><a href="/MyProfile/PaymentDetails">Payment Modes</a></li>
+                    <li><a href="/Account/ChangePassword">Change Password</a></li>
+                    <li><a href="/Account/SignOut">Sign Out</a></li>
+                </ul>
+            </li>
+        </ul>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+        </header>
+        <div id="home" style="margin-top:50px;">
+            <div class="">
+                
+
+
+<div class="container-fluid pageBackground">
+    <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 contentBackground">
+        <div class="content-header">
+                <h1>Edit Account</h1>
+            <hr />
+        </div>
+        <div class="content">
+            <div id="infAccountInfoForm" class="contentBorder">
+                <div class="row">
+<form action="/Influencer/SaveAccount" enctype="multipart/form-data" id="infAccountDetailsForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="cMg5kGq0G5JxYwwZFeAe7ZvfFjD_81baRJKl37ogaMGWW3WwBhMtNH-LRkgb18rUF9_47P6MsN0xnjk5sIplD7-QSm4Z8qUCr7fJ4RlZNBOKZWxnKLN3Rj0XFrxAPhuGi2Wo0vaNHou4E2cQqH17ag2" />                            <div class="form-horizontal">                                
+                                <input data-val="true" data-val-number="The field ID must be a number." id="InfAccount_ID" name="InfAccount.ID" type="hidden" value="1" />
+                                
+                                <input id="InfAccount_Image" name="InfAccount.Image" type="hidden" value="1/Instagram_Sara_20200802-164630.JPG" />
+
+                                <div class="col-md-8 col-sm-12">
+                                    
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Social_Media_Type">Platform</label>
+                                            <span class="color-red">*</span>
+<input data-val="true" data-val-number="The field Platform must be a number." data-val-required="The Platform field is required." id="InfAccount_Social_Media_Type" name="InfAccount.Social_Media_Type" type="hidden" value="2" /><select class="form-control" disabled="disabled" id="InfAccount_Social_Media_Type" name="InfAccount.Social_Media_Type"><option value="">--Please Select--</option>
+<option value="1">Facebook</option>
+<option selected="selected" value="2">Instagram</option>
+<option value="3">LinkedIn</option>
+<option value="4">Twitter</option>
+<option value="5">Youtube</option>
+<option value="6">TikTok</option>
+<option value="7">Twitch</option>
+<option value="8">Snapchat</option>
+<option value="9">Spotify</option>
+<option value="10">Amazon</option>
+<option value="11">Podcast</option>
+<option value="12">Medium</option>
+<option value="13">SoundCloud</option>
+</select>                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Url">Platform URL</label>
+                                            <span class="color-red">*</span>
+                                                <a href="javascript:void(0)" data-toggle="popover" data-content="Updating this field will initiate verification from our team and your account will remain inactive for that time." data-placement="top" data-trigger="hover">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </a>
+                                            <input class="form-control text-box single-line" data-val="true" data-val-length="The field Platform URL must be a string with a maximum length of 200." data-val-length-max="200" data-val-required="The Platform URL field is required." id="InfAccount_Url" maxlength="200" name="InfAccount.Url" placeholder="Platform URL (Starting with http:// or https://)" type="url" value="https://www.lnstagram.com/sara25" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Url" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Name">Name</label>
+                                            <span class="color-red">*</span>
+<input class="form-control text-box single-line" data-val="true" data-val-length="The field Name must be a string with a maximum length of 100." data-val-length-max="100" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w ]+)$" data-val-required="The Name field is required." id="InfAccount_Name" maxlength="100" name="InfAccount.Name" placeholder="Name" type="text" value="Sara" />                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Name" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_UserName">Username</label>
+                                            <span class="color-red">*</span>
+                                                <a href="javascript:void(0)" data-toggle="popover" data-content="Updating this field will initiate verification from our team and your account will remain inactive for that time." data-placement="top" data-trigger="hover">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </a>
+                                            <input class="form-control text-box single-line" data-val="true" data-val-length="The field Username must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Please enter a valid Username." data-val-regex-pattern="^[\w]([\w.])*$" data-val-required="The Username field is required." id="InfAccount_UserName" maxlength="50" name="InfAccount.UserName" placeholder="Platform Username" type="text" value="Sara25" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.UserName" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Tagline">Bio</label>
+                                            <a href="javascript:void(0)" data-toggle="popover" data-content="Mention your accomplishments/ profession/ interests/ area of expertise" data-placement="top" data-trigger="hover">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                            <input class="form-control search-account-fill text-box single-line" data-val="true" data-val-length="The field Bio must be a string with a maximum length of 50." data-val-length-max="50" id="InfAccount_Tagline" maxlength="50" name="InfAccount.Tagline" placeholder="Mention something about who you are" type="text" value="#Fashion" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Tagline" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_UploadImage">Upload Image</label>
+                                                <a href="javascript:void(0)" data-toggle="popover" data-content="Updating this field will initiate verification from our team and your account will remain inactive for that time." data-placement="top" data-trigger="hover">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </a>
+                                            <input accept="image/*" class="form-control" id="InfAccount_UploadImage" name="InfAccount.UploadImage" type="file" value="" />
+                                            <span>Extensions .jpeg, .jpg, .png</span><br />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.UploadImage" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Follower">Followers</label>
+                                            <span class="color-red">*</span>
+                                                <a href="javascript:void(0)" data-toggle="popover" data-content="Updating this field will initiate verification from our team and your account will remain inactive for that time." data-placement="top" data-trigger="hover">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </a>
+                                            <input class="form-control search-account-fill text-box single-line" data-val="true" data-val-number="The field Followers must be a number." data-val-range="Followers must be greater than 0." data-val-range-max="2147483647" data-val-range-min="1" data-val-required="The Followers field is required." id="InfAccount_Follower" maxlength="10" name="InfAccount.Follower" placeholder="Followers" type="number" value="12500" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Follower" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label">Approx. Price per Post (USD)</label>
+                                            <span class="color-red">*</span>
+                                            <input class="form-control search-account-fill text-box single-line" data-val="true" data-val-number="The field Approx. Price must be a number." data-val-range="Approx. Price must be greater than 0." data-val-range-max="2147483647" data-val-range-min="1" data-val-required="The Approx. Price field is required." id="InfAccount_Price" maxlength="10" name="InfAccount.Price" placeholder="Price per Post in USD" type="text" value="10" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Price" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Gender_ID">Gender</label>
+                                            <span class="color-red">*</span>
+                                            <select class="form-control search-account-fill" data-val="true" data-val-number="The field Gender must be a number." data-val-required="The Gender field is required." id="InfAccount_Gender_ID" name="InfAccount.Gender_ID"><option value="">--Please Select--</option>
+<option selected="selected" value="2">Female</option>
+<option value="1">Male</option>
+</select>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Gender_ID" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_InfluencerCategories">Categories</label>
+                                            <span class="color-red">*</span>
+                                            <select class="form-control search-account-fill" data-val="true" data-val-required="The Categories field is required." id="drpInfCategory" multiple="multiple" name="InfAccount.InfluencerCategories"><option value="11">Automotive</option>
+<option selected="selected" value="4">Fashion</option>
+<option selected="selected" value="5">Fitness</option>
+<option selected="selected" value="2">Food</option>
+<option value="13">Gaming</option>
+<option value="3">Luxury</option>
+<option value="10">Make up Artist</option>
+<option value="9">Model</option>
+<option value="12">Musician</option>
+<option value="8">Parenting</option>
+<option value="6">Photography</option>
+<option value="7">Technology</option>
+<option value="1">Travel</option>
+</select>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.InfluencerCategories" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Country_ID">Country</label>
+                                            <span class="color-red">*</span>
+                                            <select class="form-control search-account-fill" data-val="true" data-val-number="The field Country must be a number." data-val-required="The Country field is required." id="drpCountry" name="InfAccount.Country_ID"><option value="">--Please Select--</option>
+<option value="1">Afghanistan</option>
+<option value="2">Albania</option>
+<option value="3">Algeria</option>
+<option value="4">American Samoa</option>
+<option value="5">Andorra</option>
+<option value="6">Angola</option>
+<option value="7">Anguilla</option>
+<option value="8">Antarctica</option>
+<option value="9">Antigua And Barbuda</option>
+<option value="10">Argentina</option>
+<option value="11">Armenia</option>
+<option value="12">Aruba</option>
+<option value="13">Australia</option>
+<option value="14">Austria</option>
+<option value="15">Azerbaijan</option>
+<option value="16">Bahamas The</option>
+<option value="17">Bahrain</option>
+<option value="18">Bangladesh</option>
+<option value="19">Barbados</option>
+<option value="20">Belarus</option>
+<option value="21">Belgium</option>
+<option value="22">Belize</option>
+<option value="23">Benin</option>
+<option value="24">Bermuda</option>
+<option value="25">Bhutan</option>
+<option value="26">Bolivia</option>
+<option value="27">Bosnia and Herzegovina</option>
+<option value="28">Botswana</option>
+<option value="29">Bouvet Island</option>
+<option value="30">Brazil</option>
+<option value="31">British Indian Ocean Territory</option>
+<option value="32">Brunei</option>
+<option value="33">Bulgaria</option>
+<option value="34">Burkina Faso</option>
+<option value="35">Burundi</option>
+<option value="36">Cambodia</option>
+<option value="37">Cameroon</option>
+<option value="38">Canada</option>
+<option value="39">Cape Verde</option>
+<option value="40">Cayman Islands</option>
+<option value="41">Central African Republic</option>
+<option value="42">Chad</option>
+<option value="43">Chile</option>
+<option value="44">China</option>
+<option value="45">Christmas Island</option>
+<option value="46">Cocos (Keeling) Islands</option>
+<option value="47">Colombia</option>
+<option value="48">Comoros</option>
+<option value="49">Republic Of The Congo</option>
+<option value="50">Democratic Republic Of The Congo</option>
+<option value="51">Cook Islands</option>
+<option value="52">Costa Rica</option>
+<option value="53">Cote D&#39;Ivoire (Ivory Coast)</option>
+<option value="54">Croatia (Hrvatska)</option>
+<option value="55">Cuba</option>
+<option value="56">Cyprus</option>
+<option value="57">Czech Republic</option>
+<option value="58">Denmark</option>
+<option value="59">Djibouti</option>
+<option value="60">Dominica</option>
+<option value="61">Dominican Republic</option>
+<option value="62">East Timor</option>
+<option value="63">Ecuador</option>
+<option value="64">Egypt</option>
+<option value="65">El Salvador</option>
+<option value="66">Equatorial Guinea</option>
+<option value="67">Eritrea</option>
+<option value="68">Estonia</option>
+<option value="69">Ethiopia</option>
+<option value="70">External Territories of Australia</option>
+<option value="71">Falkland Islands</option>
+<option value="72">Faroe Islands</option>
+<option value="73">Fiji Islands</option>
+<option value="74">Finland</option>
+<option value="75">France</option>
+<option value="76">French Guiana</option>
+<option value="77">French Polynesia</option>
+<option value="78">French Southern Territories</option>
+<option value="79">Gabon</option>
+<option value="80">Gambia The</option>
+<option value="81">Georgia</option>
+<option value="82">Germany</option>
+<option value="83">Ghana</option>
+<option value="84">Gibraltar</option>
+<option value="85">Greece</option>
+<option value="86">Greenland</option>
+<option value="87">Grenada</option>
+<option value="88">Guadeloupe</option>
+<option value="89">Guam</option>
+<option value="90">Guatemala</option>
+<option value="91">Guernsey and Alderney</option>
+<option value="92">Guinea</option>
+<option value="93">Guinea-Bissau</option>
+<option value="94">Guyana</option>
+<option value="95">Haiti</option>
+<option value="96">Heard and McDonald Islands</option>
+<option value="97">Honduras</option>
+<option value="98">Hong Kong S.A.R.</option>
+<option value="99">Hungary</option>
+<option value="100">Iceland</option>
+<option selected="selected" value="101">India</option>
+<option value="102">Indonesia</option>
+<option value="103">Iran</option>
+<option value="104">Iraq</option>
+<option value="105">Ireland</option>
+<option value="106">Israel</option>
+<option value="107">Italy</option>
+<option value="108">Jamaica</option>
+<option value="109">Japan</option>
+<option value="110">Jersey</option>
+<option value="111">Jordan</option>
+<option value="112">Kazakhstan</option>
+<option value="113">Kenya</option>
+<option value="114">Kiribati</option>
+<option value="115">Korea North</option>
+<option value="116">Korea South</option>
+<option value="117">Kuwait</option>
+<option value="118">Kyrgyzstan</option>
+<option value="119">Laos</option>
+<option value="120">Latvia</option>
+<option value="121">Lebanon</option>
+<option value="122">Lesotho</option>
+<option value="123">Liberia</option>
+<option value="124">Libya</option>
+<option value="125">Liechtenstein</option>
+<option value="126">Lithuania</option>
+<option value="127">Luxembourg</option>
+<option value="128">Macau S.A.R.</option>
+<option value="129">Macedonia</option>
+<option value="130">Madagascar</option>
+<option value="131">Malawi</option>
+<option value="132">Malaysia</option>
+<option value="133">Maldives</option>
+<option value="134">Mali</option>
+<option value="135">Malta</option>
+<option value="136">Man (Isle of)</option>
+<option value="137">Marshall Islands</option>
+<option value="138">Martinique</option>
+<option value="139">Mauritania</option>
+<option value="140">Mauritius</option>
+<option value="141">Mayotte</option>
+<option value="142">Mexico</option>
+<option value="143">Micronesia</option>
+<option value="144">Moldova</option>
+<option value="145">Monaco</option>
+<option value="146">Mongolia</option>
+<option value="147">Montserrat</option>
+<option value="148">Morocco</option>
+<option value="149">Mozambique</option>
+<option value="150">Myanmar</option>
+<option value="151">Namibia</option>
+<option value="152">Nauru</option>
+<option value="153">Nepal</option>
+<option value="154">Netherlands Antilles</option>
+<option value="155">Netherlands The</option>
+<option value="156">New Caledonia</option>
+<option value="157">New Zealand</option>
+<option value="158">Nicaragua</option>
+<option value="159">Niger</option>
+<option value="160">Nigeria</option>
+<option value="161">Niue</option>
+<option value="162">Norfolk Island</option>
+<option value="163">Northern Mariana Islands</option>
+<option value="164">Norway</option>
+<option value="165">Oman</option>
+<option value="166">Pakistan</option>
+<option value="167">Palau</option>
+<option value="168">Palestinian Territory Occupied</option>
+<option value="169">Panama</option>
+<option value="170">Papua new Guinea</option>
+<option value="171">Paraguay</option>
+<option value="172">Peru</option>
+<option value="173">Philippines</option>
+<option value="174">Pitcairn Island</option>
+<option value="175">Poland</option>
+<option value="176">Portugal</option>
+<option value="177">Puerto Rico</option>
+<option value="178">Qatar</option>
+<option value="179">Reunion</option>
+<option value="180">Romania</option>
+<option value="181">Russia</option>
+<option value="182">Rwanda</option>
+<option value="183">Saint Helena</option>
+<option value="184">Saint Kitts And Nevis</option>
+<option value="185">Saint Lucia</option>
+<option value="186">Saint Pierre and Miquelon</option>
+<option value="187">Saint Vincent And The Grenadines</option>
+<option value="188">Samoa</option>
+<option value="189">San Marino</option>
+<option value="190">Sao Tome and Principe</option>
+<option value="191">Saudi Arabia</option>
+<option value="192">Senegal</option>
+<option value="193">Serbia</option>
+<option value="194">Seychelles</option>
+<option value="195">Sierra Leone</option>
+<option value="196">Singapore</option>
+<option value="197">Slovakia</option>
+<option value="198">Slovenia</option>
+<option value="199">Smaller Territories of the UK</option>
+<option value="200">Solomon Islands</option>
+<option value="201">Somalia</option>
+<option value="202">South Africa</option>
+<option value="203">South Georgia</option>
+<option value="204">South Sudan</option>
+<option value="205">Spain</option>
+<option value="206">Sri Lanka</option>
+<option value="207">Sudan</option>
+<option value="208">Suriname</option>
+<option value="209">Svalbard And Jan Mayen Islands</option>
+<option value="210">Swaziland</option>
+<option value="211">Sweden</option>
+<option value="212">Switzerland</option>
+<option value="213">Syria</option>
+<option value="214">Taiwan</option>
+<option value="215">Tajikistan</option>
+<option value="216">Tanzania</option>
+<option value="217">Thailand</option>
+<option value="218">Togo</option>
+<option value="219">Tokelau</option>
+<option value="220">Tonga</option>
+<option value="221">Trinidad And Tobago</option>
+<option value="222">Tunisia</option>
+<option value="223">Turkey</option>
+<option value="224">Turkmenistan</option>
+<option value="225">Turks And Caicos Islands</option>
+<option value="226">Tuvalu</option>
+<option value="227">Uganda</option>
+<option value="228">Ukraine</option>
+<option value="229">United Arab Emirates</option>
+<option value="230">United Kingdom</option>
+<option value="231">United States</option>
+<option value="232">United States Minor Outlying Islands</option>
+<option value="233">Uruguay</option>
+<option value="234">Uzbekistan</option>
+<option value="235">Vanuatu</option>
+<option value="236">Vatican City State (Holy See)</option>
+<option value="237">Venezuela</option>
+<option value="238">Vietnam</option>
+<option value="239">Virgin Islands (British)</option>
+<option value="240">Virgin Islands (US)</option>
+<option value="241">Wallis And Futuna Islands</option>
+<option value="242">Western Sahara</option>
+<option value="243">Yemen</option>
+<option value="244">Yugoslavia</option>
+<option value="245">Zambia</option>
+<option value="246">Zimbabwe</option>
+</select>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Country_ID" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_State_ID">State</label>
+                                            <span class="color-red">*</span>
+                                            <select class="form-control search-account-fill" data-val="true" data-val-number="The field State must be a number." data-val-required="The State field is required." id="drpState" name="InfAccount.State_ID"><option value="">--Please Select--</option>
+<option value="1">Andaman and Nicobar Islands</option>
+<option value="2">Andhra Pradesh</option>
+<option value="3">Arunachal Pradesh</option>
+<option value="4">Assam</option>
+<option value="5">Bihar</option>
+<option value="6">Chandigarh</option>
+<option value="7">Chhattisgarh</option>
+<option value="8">Dadra and Nagar Haveli</option>
+<option value="9">Daman and Diu</option>
+<option value="10">Delhi</option>
+<option value="11">Goa</option>
+<option value="12">Gujarat</option>
+<option value="13">Haryana</option>
+<option value="14">Himachal Pradesh</option>
+<option value="15">Jammu and Kashmir</option>
+<option value="16">Jharkhand</option>
+<option value="17">Karnataka</option>
+<option value="18">Kenmore</option>
+<option value="19">Kerala</option>
+<option value="20">Lakshadweep</option>
+<option value="21">Madhya Pradesh</option>
+<option selected="selected" value="22">Maharashtra</option>
+<option value="23">Manipur</option>
+<option value="24">Meghalaya</option>
+<option value="25">Mizoram</option>
+<option value="26">Nagaland</option>
+<option value="27">Narora</option>
+<option value="28">Natwar</option>
+<option value="29">Odisha</option>
+<option value="30">Paschim Medinipur</option>
+<option value="31">Pondicherry</option>
+<option value="32">Punjab</option>
+<option value="33">Rajasthan</option>
+<option value="34">Sikkim</option>
+<option value="35">Tamil Nadu</option>
+<option value="36">Telangana</option>
+<option value="37">Tripura</option>
+<option value="38">Uttar Pradesh</option>
+<option value="39">Uttarakhand</option>
+<option value="40">Vaishali</option>
+<option value="41">West Bengal</option>
+</select>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.State_ID" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_City_ID">City</label>
+                                            <select class="form-control search-account-fill" data-val="true" data-val-number="The field City must be a number." id="drpCity" name="InfAccount.City_ID"><option value="">--Please Select--</option>
+<option value="2474">Achalpur</option>
+<option value="2475">Aheri</option>
+<option value="2476">Ahmadnagar Cantonment</option>
+<option value="2477">Ahmadpur</option>
+<option value="2478">Ahmednagar</option>
+<option value="2479">Ajra</option>
+<option value="2480">Akalkot</option>
+<option value="2481">Akkalkuwa</option>
+<option value="2482">Akola</option>
+<option value="2483">Akot</option>
+<option value="2484">Alandi</option>
+<option value="2485">Alibag</option>
+<option value="2486">Allapalli</option>
+<option value="2487">Alore</option>
+<option value="2488">Amalner</option>
+<option value="2489">Ambad</option>
+<option value="2490">Ambajogai</option>
+<option value="2491">Ambernath</option>
+<option value="2492">Ambivali Tarf Wankhal</option>
+<option value="2493">Amgaon</option>
+<option value="2494">Amravati</option>
+<option value="2495">Anjangaon</option>
+<option value="2496">Arvi</option>
+<option value="2497">Ashta</option>
+<option value="2498">Ashti</option>
+<option value="2499">Aurangabad</option>
+<option value="2500">Aurangabad Cantonment</option>
+<option value="2501">Ausa</option>
+<option value="2502">Babhulgaon</option>
+<option value="2503">Badlapur</option>
+<option value="2504">Balapur</option>
+<option value="2505">Ballarpur</option>
+<option value="2506">Baramati</option>
+<option value="2507">Barshi</option>
+<option value="2508">Basmat</option>
+<option value="2509">Beed</option>
+<option value="2510">Bhadravati</option>
+<option value="2511">Bhagur</option>
+<option value="2512">Bhandara</option>
+<option value="2513">Bhigvan</option>
+<option value="2514">Bhingar</option>
+<option value="2515">Bhiwandi</option>
+<option value="2516">Bhokhardan</option>
+<option value="2517">Bhor</option>
+<option value="2518">Bhosari</option>
+<option value="2519">Bhum</option>
+<option value="2520">Bhusawal</option>
+<option value="2521">Bid</option>
+<option value="2522">Biloli</option>
+<option value="2523">Birwadi</option>
+<option value="2524">Boisar</option>
+<option value="2525">Bop Khel</option>
+<option value="2526">Brahmapuri</option>
+<option value="2527">Budhgaon</option>
+<option value="2528">Buldana</option>
+<option value="2529">Buldhana</option>
+<option value="2530">Butibori</option>
+<option value="2531">Chakan</option>
+<option value="2532">Chalisgaon</option>
+<option value="2533">Chandrapur</option>
+<option value="2534">Chandur</option>
+<option value="2535">Chandur Bazar</option>
+<option value="2536">Chandvad</option>
+<option value="2537">Chicholi</option>
+<option value="2538">Chikhala</option>
+<option value="2539">Chikhaldara</option>
+<option value="2540">Chikhli</option>
+<option value="2541">Chinchani</option>
+<option value="2542">Chinchwad</option>
+<option value="2543">Chiplun</option>
+<option value="2544">Chopda</option>
+<option value="2545">Dabhol</option>
+<option value="2546">Dahance</option>
+<option value="2547">Dahanu</option>
+<option value="2548">Daharu</option>
+<option value="2549">Dapoli Camp</option>
+<option value="2550">Darwa</option>
+<option value="2551">Daryapur</option>
+<option value="2552">Dattapur</option>
+<option value="2553">Daund</option>
+<option value="2554">Davlameti</option>
+<option value="2555">Deglur</option>
+<option value="2556">Dehu Road</option>
+<option value="2557">Deolali</option>
+<option value="2558">Deolali Pravara</option>
+<option value="2559">Deoli</option>
+<option value="2560">Desaiganj</option>
+<option value="2561">Deulgaon Raja</option>
+<option value="2562">Dewhadi</option>
+<option value="2563">Dharangaon</option>
+<option value="2564">Dharmabad</option>
+<option value="2565">Dharur</option>
+<option value="2566">Dhatau</option>
+<option value="2567">Dhule</option>
+<option value="2568">Digdoh</option>
+<option value="2569">Diglur</option>
+<option value="2570">Digras</option>
+<option value="2571">Dombivli</option>
+<option value="2572">Dondaicha</option>
+<option value="2573">Dudhani</option>
+<option value="2574">Durgapur</option>
+<option value="2575">Dyane</option>
+<option value="2576">Edandol</option>
+<option value="2577">Eklahare</option>
+<option value="2578">Faizpur</option>
+<option value="2579">Fekari</option>
+<option value="2580">Gadchiroli</option>
+<option value="2581">Gadhinghaj</option>
+<option value="2582">Gandhi Nagar</option>
+<option value="2583">Ganeshpur</option>
+<option value="2584">Gangakher</option>
+<option value="2585">Gangapur</option>
+<option value="2586">Gevrai</option>
+<option value="2587">Ghatanji</option>
+<option value="2588">Ghoti</option>
+<option value="2589">Ghugus</option>
+<option value="2590">Ghulewadi</option>
+<option value="2591">Godoli</option>
+<option value="2592">Gondia</option>
+<option value="2593">Guhagar</option>
+<option value="2594">Hadgaon</option>
+<option value="2595">Harnai Beach</option>
+<option value="2596">Hinganghat</option>
+<option value="2597">Hingoli</option>
+<option value="2598">Hupari</option>
+<option value="2599">Ichalkaranji</option>
+<option value="2600">Igatpuri</option>
+<option value="2601">Indapur</option>
+<option value="2602">Jaisinghpur</option>
+<option value="2603">Jalgaon</option>
+<option value="2604">Jalna</option>
+<option value="2605">Jamkhed</option>
+<option value="2606">Jawhar</option>
+<option value="2607">Jaysingpur</option>
+<option value="2608">Jejuri</option>
+<option value="2609">Jintur</option>
+<option value="2610">Junnar</option>
+<option value="2611">Kabnur</option>
+<option value="2612">Kagal</option>
+<option value="2613">Kalamb</option>
+<option value="2614">Kalamnuri</option>
+<option value="2615">Kalas</option>
+<option value="2616">Kalmeshwar</option>
+<option value="2617">Kalundre</option>
+<option value="2618">Kalyan</option>
+<option value="2619">Kamthi</option>
+<option value="2620">Kamthi Cantonment</option>
+<option value="2621">Kandari</option>
+<option value="2622">Kandhar</option>
+<option value="2623">Kandri</option>
+<option value="2624">Kandri II</option>
+<option value="2625">Kanhan</option>
+<option value="2626">Kankavli</option>
+<option value="2627">Kannad</option>
+<option value="2628">Karad</option>
+<option value="2629">Karanja</option>
+<option value="2630">Karanje Tarf</option>
+<option value="2631">Karivali</option>
+<option value="2632">Karjat</option>
+<option value="2633">Karmala</option>
+<option value="2634">Kasara Budruk</option>
+<option value="2635">Katai</option>
+<option value="2636">Katkar</option>
+<option value="2637">Katol</option>
+<option value="2638">Kegaon</option>
+<option value="2639">Khadkale</option>
+<option value="2640">Khadki</option>
+<option value="2641">Khamgaon</option>
+<option value="2642">Khapa</option>
+<option value="2643">Kharadi</option>
+<option value="2644">Kharakvasla</option>
+<option value="2645">Khed</option>
+<option value="2646">Kherdi</option>
+<option value="2647">Khoni</option>
+<option value="2648">Khopoli</option>
+<option value="2649">Khuldabad</option>
+<option value="2650">Kinwat</option>
+<option value="2651">Kodoli</option>
+<option value="2652">Kolhapur</option>
+<option value="2653">Kon</option>
+<option value="2654">Kondumal</option>
+<option value="2655">Kopargaon</option>
+<option value="2656">Kopharad</option>
+<option value="2657">Koradi</option>
+<option value="2658">Koregaon</option>
+<option value="2659">Korochi</option>
+<option value="2660">Kudal</option>
+<option value="2661">Kundaim</option>
+<option value="2662">Kundalwadi</option>
+<option value="2663">Kurandvad</option>
+<option value="2664">Kurduvadi</option>
+<option value="2665">Kusgaon Budruk</option>
+<option value="2666">Lanja</option>
+<option value="2667">Lasalgaon</option>
+<option value="2668">Latur</option>
+<option value="2669">Loha</option>
+<option value="2670">Lohegaon</option>
+<option value="2671">Lonar</option>
+<option value="2672">Lonavala</option>
+<option value="2673">Madhavnagar</option>
+<option value="2674">Mahabaleshwar</option>
+<option value="2675">Mahad</option>
+<option value="2676">Mahadula</option>
+<option value="2677">Maindargi</option>
+<option value="2678">Majalgaon</option>
+<option value="2679">Malegaon</option>
+<option value="2680">Malgaon</option>
+<option value="2681">Malkapur</option>
+<option value="2682">Malwan</option>
+<option value="2683">Manadur</option>
+<option value="2684">Manchar</option>
+<option value="2685">Mangalvedhe</option>
+<option value="2686">Mangrul Pir</option>
+<option value="2687">Manmad</option>
+<option value="2688">Manor</option>
+<option value="2689">Mansar</option>
+<option value="2690">Manwath</option>
+<option value="2691">Mapuca</option>
+<option value="2692">Matheran</option>
+<option value="2693">Mehkar</option>
+<option value="2694">Mhasla</option>
+<option value="2695">Mhaswad</option>
+<option value="2696">Mira Bhayandar</option>
+<option value="2697">Miraj</option>
+<option value="2698">Mohpa</option>
+<option value="2699">Mohpada</option>
+<option value="2700">Moram</option>
+<option value="2701">Morshi</option>
+<option value="2702">Mowad</option>
+<option value="2703">Mudkhed</option>
+<option value="2704">Mukhed</option>
+<option value="2705">Mul</option>
+<option value="2706">Mulshi</option>
+<option selected="selected" value="2707">Mumbai</option>
+<option value="2708">Murbad</option>
+<option value="2709">Murgud</option>
+<option value="2710">Murtijapur</option>
+<option value="2711">Murud</option>
+<option value="2712">Nachane</option>
+<option value="2713">Nagardeole</option>
+<option value="2714">Nagothane</option>
+<option value="2715">Nagpur</option>
+<option value="2716">Nakoda</option>
+<option value="2717">Nalasopara</option>
+<option value="2718">Naldurg</option>
+<option value="2719">Nanded</option>
+<option value="2720">Nandgaon</option>
+<option value="2721">Nandura</option>
+<option value="2722">Nandurbar</option>
+<option value="2723">Narkhed</option>
+<option value="2724">Nashik</option>
+<option value="2725">Navapur</option>
+<option value="2726">Navi Mumbai</option>
+<option value="2727">Navi Mumbai Panvel</option>
+<option value="2728">Neral</option>
+<option value="2729">Nigdi</option>
+<option value="2730">Nilanga</option>
+<option value="2731">Nildoh</option>
+<option value="2732">Nimbhore</option>
+<option value="2733">Ojhar</option>
+<option value="2734">Osmanabad</option>
+<option value="2735">Pachgaon</option>
+<option value="2736">Pachora</option>
+<option value="2737">Padagha</option>
+<option value="2738">Paithan</option>
+<option value="2739">Palghar</option>
+<option value="2740">Pali</option>
+<option value="2741">Panchgani</option>
+<option value="2742">Pandhakarwada</option>
+<option value="2743">Pandharpur</option>
+<option value="2744">Panhala</option>
+<option value="2745">Panvel</option>
+<option value="2746">Paranda</option>
+<option value="2747">Parbhani</option>
+<option value="2748">Parli</option>
+<option value="2749">Parola</option>
+<option value="2750">Partur</option>
+<option value="2751">Pasthal</option>
+<option value="2752">Patan</option>
+<option value="2753">Pathardi</option>
+<option value="2754">Pathri</option>
+<option value="2755">Patur</option>
+<option value="2756">Pawni</option>
+<option value="2757">Pen</option>
+<option value="2758">Pethumri</option>
+<option value="2759">Phaltan</option>
+<option value="2760">Pimpri</option>
+<option value="2761">Poladpur</option>
+<option value="2762">Pulgaon</option>
+<option value="2763">Pune</option>
+<option value="2764">Pune Cantonment</option>
+<option value="2765">Purna</option>
+<option value="2766">Purushottamnagar</option>
+<option value="2767">Pusad</option>
+<option value="2768">Rahimatpur</option>
+<option value="2769">Rahta Pimplas</option>
+<option value="2770">Rahuri</option>
+<option value="2771">Raigad</option>
+<option value="2772">Rajapur</option>
+<option value="2773">Rajgurunagar</option>
+<option value="2774">Rajur</option>
+<option value="2775">Rajura</option>
+<option value="2776">Ramtek</option>
+<option value="2777">Ratnagiri</option>
+<option value="2778">Ravalgaon</option>
+<option value="2779">Raver</option>
+<option value="2780">Revadanda</option>
+<option value="2781">Risod</option>
+<option value="2782">Roha Ashtami</option>
+<option value="2783">Sakri</option>
+<option value="2784">Sandor</option>
+<option value="2785">Sangamner</option>
+<option value="2786">Sangli</option>
+<option value="2787">Sangole</option>
+<option value="2788">Sasti</option>
+<option value="2789">Sasvad</option>
+<option value="2790">Satana</option>
+<option value="2791">Satara</option>
+<option value="2792">Savantvadi</option>
+<option value="2793">Savda</option>
+<option value="2794">Savner</option>
+<option value="2795">Sawari Jawharnagar</option>
+<option value="2796">Selu</option>
+<option value="2797">Shahada</option>
+<option value="2798">Shahapur</option>
+<option value="2799">Shegaon</option>
+<option value="2800">Shelar</option>
+<option value="2801">Shendurjana</option>
+<option value="2802">Shirdi</option>
+<option value="2803">Shirgaon</option>
+<option value="2804">Shirpur</option>
+<option value="2805">Shirur</option>
+<option value="2806">Shirwal</option>
+<option value="2807">Shivatkar</option>
+<option value="2808">Shrigonda</option>
+<option value="2809">Shrirampur</option>
+<option value="2810">Shrirampur Rural</option>
+<option value="2811">Sillewada</option>
+<option value="2812">Sillod</option>
+<option value="2813">Sindhudurg</option>
+<option value="2814">Sindi</option>
+<option value="2815">Sindi Turf Hindnagar</option>
+<option value="2816">Sindkhed Raja</option>
+<option value="2817">Singnapur</option>
+<option value="2818">Sinnar</option>
+<option value="2819">Sirur</option>
+<option value="2820">Sitasawangi</option>
+<option value="2821">Solapur</option>
+<option value="2822">Sonai</option>
+<option value="2823">Sonegaon</option>
+<option value="2824">Soyagaon</option>
+<option value="2825">Srivardhan</option>
+<option value="2826">Surgana</option>
+<option value="2827">Talegaon Dabhade</option>
+<option value="2828">Taloda</option>
+<option value="2829">Taloja</option>
+<option value="2830">Talwade</option>
+<option value="2831">Tarapur</option>
+<option value="2832">Tasgaon</option>
+<option value="2833">Tathavade</option>
+<option value="2834">Tekadi</option>
+<option value="2835">Telhara</option>
+<option value="2836">Thane</option>
+<option value="2837">Tirira</option>
+<option value="2838">Totaladoh</option>
+<option value="2839">Trimbak</option>
+<option value="2840">Tuljapur</option>
+<option value="2841">Tumsar</option>
+<option value="2842">Uchgaon</option>
+<option value="2843">Udgir</option>
+<option value="2844">Ulhasnagar</option>
+<option value="2845">Umarga</option>
+<option value="2846">Umarkhed</option>
+<option value="2847">Umarsara</option>
+<option value="2848">Umbar Pada Nandade</option>
+<option value="2849">Umred</option>
+<option value="2850">Umri Pragane Balapur</option>
+<option value="2851">Uran</option>
+<option value="2852">Uran Islampur</option>
+<option value="2853">Utekhol</option>
+<option value="2854">Vada</option>
+<option value="2855">Vadgaon</option>
+<option value="2856">Vadgaon Kasba</option>
+<option value="2857">Vaijapur</option>
+<option value="2858">Vanvadi</option>
+<option value="2859">Varangaon</option>
+<option value="2860">Vasai</option>
+<option value="2861">Vasantnagar</option>
+<option value="2862">Vashind</option>
+<option value="2863">Vengurla</option>
+<option value="2864">Virar</option>
+<option value="2865">Visapur</option>
+<option value="2866">Vite</option>
+<option value="2867">Vithalwadi</option>
+<option value="2868">Wadi</option>
+<option value="2869">Waghapur</option>
+<option value="2870">Wai</option>
+<option value="2871">Wajegaon</option>
+<option value="2872">Walani</option>
+<option value="2873">Wanadongri</option>
+<option value="2874">Wani</option>
+<option value="2875">Wardha</option>
+<option value="2876">Warora</option>
+<option value="2877">Warthi</option>
+<option value="2878">Warud</option>
+<option value="2879">Washim</option>
+<option value="2880">Yaval</option>
+<option value="2881">Yavatmal</option>
+<option value="2882">Yeola</option>
+<option value="2883">Yerkheda</option>
+</select>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.City_ID" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Languages">Languages</label>
+                                            <select class="form-control search-account-fill" id="drpInfLanguage" multiple="multiple" name="InfAccount.Languages"><option value="1">Afrikaans</option>
+<option value="2">Albanian</option>
+<option value="3">Amharic</option>
+<option value="4">Arabic (Egyptian Spoken)</option>
+<option value="5">Arabic (Levantine)</option>
+<option value="6">Arabic (Modern Standard)</option>
+<option value="7">Arabic (Moroccan Spoken)</option>
+<option value="8">Arabic (Overview)</option>
+<option value="9">Aramaic</option>
+<option value="10">Armenian</option>
+<option value="11">Assamese</option>
+<option value="12">Aymara</option>
+<option value="13">Azerbaijani</option>
+<option value="14">Balochi</option>
+<option value="15">Bamanankan</option>
+<option value="16">Bashkort (Bashkir)</option>
+<option value="17">Basque</option>
+<option value="18">Belarusan</option>
+<option value="19">Bengali</option>
+<option value="20">Bhojpuri</option>
+<option value="21">Bislama</option>
+<option value="22">Bosnian</option>
+<option value="23">Brahui</option>
+<option value="24">Bulgarian</option>
+<option value="25">Burmese</option>
+<option value="26">Cantonese</option>
+<option value="27">Catalan</option>
+<option value="28">Cebuano</option>
+<option value="29">Chechen</option>
+<option value="30">Cherokee</option>
+<option value="31">Croatian</option>
+<option value="32">Czech</option>
+<option value="33">Dakota</option>
+<option value="34">Danish</option>
+<option value="35">Dari</option>
+<option value="36">Dholuo</option>
+<option value="37">Dutch</option>
+<option selected="selected" value="38">English</option>
+<option value="39">Esperanto</option>
+<option value="40">Estonian</option>
+<option value="41">Ewe</option>
+<option value="42">Finnish</option>
+<option value="43">French</option>
+<option value="44">Georgian</option>
+<option value="45">German</option>
+<option value="46">Gikuyu</option>
+<option value="47">Greek</option>
+<option value="48">Guarani</option>
+<option value="49">Gujarati</option>
+<option value="50">Haitian Creole</option>
+<option value="51">Hausa</option>
+<option value="52">Hawaiian</option>
+<option value="53">Hawaiian Creole</option>
+<option value="54">Hebrew</option>
+<option value="55">Hiligaynon</option>
+<option selected="selected" value="56">Hindi</option>
+<option value="57">Hungarian</option>
+<option value="58">Icelandic</option>
+<option value="59">Igbo</option>
+<option value="60">Ilocano</option>
+<option value="61">Indonesian</option>
+<option value="62">Inuit</option>
+<option value="63">Irish Gaelic</option>
+<option value="64">Italian</option>
+<option value="65">Japanese</option>
+<option value="66">Jarai</option>
+<option value="67">Javanese</option>
+<option value="69">Kabyle</option>
+<option value="70">Kannada</option>
+<option value="71">Kashmiri</option>
+<option value="72">Kazakh</option>
+<option value="73">Khmer</option>
+<option value="74">Khoekhoe</option>
+<option value="68">Kiche</option>
+<option value="75">Korean</option>
+<option value="76">Kurdish</option>
+<option value="77">Kyrgyz</option>
+<option value="78">Lao</option>
+<option value="79">Latin</option>
+<option value="80">Latvian</option>
+<option value="81">Lingala</option>
+<option value="82">Lithuanian</option>
+<option value="83">Macedonian</option>
+<option value="84">Maithili</option>
+<option value="85">Malagasy</option>
+<option value="86">Malay</option>
+<option value="87">Malayalam</option>
+<option value="88">Mandarin</option>
+<option value="89">Marathi</option>
+<option value="90">Mende</option>
+<option value="91">Mongolian</option>
+<option value="92">Nahuatl</option>
+<option value="93">Navajo</option>
+<option value="94">Nepali</option>
+<option value="95">Norwegian</option>
+<option value="96">Ojibwa</option>
+<option value="97">Oriya</option>
+<option value="98">Oromo</option>
+<option value="99">Pashto</option>
+<option value="100">Persian</option>
+<option value="101">Polish</option>
+<option value="102">Portuguese</option>
+<option value="103">Punjabi</option>
+<option value="104">Quechua</option>
+<option value="105">Romani</option>
+<option value="106">Romanian</option>
+<option value="107">Russian</option>
+<option value="108">Rwanda</option>
+<option value="109">Samoan</option>
+<option value="110">Sanskrit</option>
+<option value="111">Serbian</option>
+<option value="112">Shona</option>
+<option value="113">Sindhi</option>
+<option value="114">Sinhala</option>
+<option value="115">Slovak</option>
+<option value="116">Slovene</option>
+<option value="117">Somali</option>
+<option value="118">Spanish</option>
+<option value="119">Swahili</option>
+<option value="120">Swedish</option>
+<option value="121">Tachelhit</option>
+<option value="122">Tagalog</option>
+<option value="123">Tajiki</option>
+<option value="124">Tamil</option>
+<option value="125">Tatar</option>
+<option value="126">Telugu</option>
+<option value="127">Thai</option>
+<option value="128">Tibetic</option>
+<option value="129">Tigrigna</option>
+<option value="130">Tok Pisin</option>
+<option value="131">Turkish</option>
+<option value="132">Turkmen</option>
+<option value="133">Ukrainian</option>
+<option value="134">Urdu</option>
+<option value="135">Uyghur</option>
+<option value="136">Uzbek</option>
+<option value="137">Vietnamese</option>
+<option value="138">Warlpiri</option>
+<option value="139">Welsh</option>
+<option value="140">Wolof</option>
+<option value="141">Xhosa</option>
+<option value="142">Yakut</option>
+<option value="143">Yiddish</option>
+<option value="144">Yoruba</option>
+<option value="145">Yucatec</option>
+<option value="146">Zapotec</option>
+<option value="147">Zulu</option>
+</select>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Languages" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 col-sm-12">
+                                            <label class="control-label" for="InfAccount_Profile_Description">Profile Description</label>
+                                            <span class="color-red">*</span>
+                                                <a href="javascript:void(0)" data-toggle="popover" data-content="Updating this field will initiate verification from our team and your account will remain inactive for that time." data-placement="top" data-trigger="hover">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </a>
+                                            <textarea class="form-control text-box multi-line" data-val="true" data-val-length="Profile Description must be between 10 and 5000 characters long." data-val-length-max="5000" data-val-length-min="10" data-val-required="The Profile Description field is required." id="InfAccount_Profile_Description" maxlength="5000" name="InfAccount.Profile_Description" placeholder="Provide a brief description of your Profile">
+I am a Fashion Blogger</textarea>
+                                            <span>Limit 5000 characters.</span><br />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.Profile_Description" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-12">
+                                        <div class="col-md-12 col-sm-12">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#imageLightbox" title="Click to View">
+            <img src="./images/influencer/1/Instagram_Sara_20200802-164630.JPG" class="img-thumbnail" alt="Sara">
+            
+        </a>
+        <div id="imageLightbox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./images/influencer/1/Instagram_Sara_20200802-164630.JPG" class="img-responsive" alt="Sara">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                //var lightbox = $('#imageLightbox');
+                //$('[data-target="#imageLightbox"]').on('click', function (event) {
+
+                //    var css = {
+                //        'maxWidth': $(window).width() - 100,
+                //        'maxHeight': $(window).height() - 100
+                //    };
+                //    lightbox.find('img').css(css);
+                //});
+
+                //lightbox.on('shown.bs.modal', function (e) {
+
+                //    var $img = lightbox.find('img');
+                //    var modalWidth = $img.width() + 30;
+                //    lightbox.find('.modal-dialog').css({ 'width': modalWidth });
+                //    //$("body").css('overflow', 'auto');
+                //});
+            });
+
+        </script>
+
+                                        </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <br />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="well well-sm">
+                                            <ul>
+                                                <caption><span style="text-decoration:underline">Image File</span></caption>
+                                                <li>File extensions: .jpeg, .jpg, .png</li>
+                                                <li>Max File size: 1MB</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+    <div class="col-md-12 col-sm-12">
+        <strong>Have you endorsed any Brand/ Business? </strong>
+<input checked="checked" id="chkHasBrands" name="InfAccount.Has_Brands" type="checkbox" value="true" /><input name="InfAccount.Has_Brands" type="hidden" value="false" />    </div>
+</div>
+
+<div id="divAccountBrands">
+    <div class="col-md-12 col-sm-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h4 class="panel-title panel-header">
+                    <button type="button" class="btn-link" data-toggle="collapse" data-target="#collapseBrand"><i class="fa fa-chevron-down"></i></button>
+                    Brand/ Business You Have Endorsed
+                </h4>
+            </div>
+            <div id="collapseBrand" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div id="accountBrands">
+<input type="hidden" name="InfAccount.BrandList.index" autocomplete="off" value="5b852099-ea16-4371-9cac-b6f0bb183ad5" />
+    <div id="brand-1cb0ea20b3de4d7288a2e3707813d045">
+        <input data-val="true" data-val-number="The field ID must be a number." id="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__ID" name="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].ID" type="hidden" value="11" />
+        <div class="form-group">
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Brand_Name">Brand Name</label>
+                <span class="color-red">*</span>
+                <input class="form-control inf-brand-name text-box single-line" data-val="true" data-val-length="The field Brand Name must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w.+ ]+)$" data-val-required="The Brand Name field is required." id="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Brand_Name" maxlength="50" name="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Brand_Name" placeholder="Brand Name" type="text" value="Nike" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Brand_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Name">Contact Full Name</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Full Name must be a string with a maximum length of 100." data-val-length-max="100" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w ]+)$" id="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Name" maxlength="100" name="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Name" placeholder="Contact Name" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Email">Contact Email</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Email must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Please enter a valid e-mail address." data-val-regex-pattern="^[\w\+-]+(\.[\w\+-]+)*@[a-z0-9-]+(\.[a-z0-9]+)*\.([a-z]{2,4})$" id="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Email" maxlength="50" name="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Email" placeholder="Contact Email Address" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Email" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Phone">Contact Mobile Number</label>
+                <div>
+                    <select class="form-control" id="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Phone_Code" name="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Phone_Code" style="width:40%; display:inline-block"><option value="">--Please Select--</option>
+<option value="93">(+93) Afghanistan</option>
+<option value="355">(+355) Albania</option>
+<option value="213">(+213) Algeria</option>
+<option value="1684">(+1684) American Samoa</option>
+<option value="376">(+376) Andorra</option>
+<option value="244">(+244) Angola</option>
+<option value="1264">(+1264) Anguilla</option>
+<option value="0">(+0) Antarctica</option>
+<option value="1268">(+1268) Antigua And Barbuda</option>
+<option value="54">(+54) Argentina</option>
+<option value="374">(+374) Armenia</option>
+<option value="297">(+297) Aruba</option>
+<option value="61">(+61) Australia</option>
+<option value="43">(+43) Austria</option>
+<option value="994">(+994) Azerbaijan</option>
+<option value="1242">(+1242) Bahamas The</option>
+<option value="973">(+973) Bahrain</option>
+<option value="880">(+880) Bangladesh</option>
+<option value="1246">(+1246) Barbados</option>
+<option value="375">(+375) Belarus</option>
+<option value="32">(+32) Belgium</option>
+<option value="501">(+501) Belize</option>
+<option value="229">(+229) Benin</option>
+<option value="1441">(+1441) Bermuda</option>
+<option value="975">(+975) Bhutan</option>
+<option value="591">(+591) Bolivia</option>
+<option value="387">(+387) Bosnia and Herzegovina</option>
+<option value="267">(+267) Botswana</option>
+<option value="0">(+0) Bouvet Island</option>
+<option value="55">(+55) Brazil</option>
+<option value="246">(+246) British Indian Ocean Territory</option>
+<option value="673">(+673) Brunei</option>
+<option value="359">(+359) Bulgaria</option>
+<option value="226">(+226) Burkina Faso</option>
+<option value="257">(+257) Burundi</option>
+<option value="855">(+855) Cambodia</option>
+<option value="237">(+237) Cameroon</option>
+<option value="1">(+1) Canada</option>
+<option value="238">(+238) Cape Verde</option>
+<option value="1345">(+1345) Cayman Islands</option>
+<option value="236">(+236) Central African Republic</option>
+<option value="235">(+235) Chad</option>
+<option value="56">(+56) Chile</option>
+<option value="86">(+86) China</option>
+<option value="61">(+61) Christmas Island</option>
+<option value="672">(+672) Cocos (Keeling) Islands</option>
+<option value="57">(+57) Colombia</option>
+<option value="269">(+269) Comoros</option>
+<option value="242">(+242) Republic Of The Congo</option>
+<option value="242">(+242) Democratic Republic Of The Congo</option>
+<option value="682">(+682) Cook Islands</option>
+<option value="506">(+506) Costa Rica</option>
+<option value="225">(+225) Cote D&#39;Ivoire (Ivory Coast)</option>
+<option value="385">(+385) Croatia (Hrvatska)</option>
+<option value="53">(+53) Cuba</option>
+<option value="357">(+357) Cyprus</option>
+<option value="420">(+420) Czech Republic</option>
+<option value="45">(+45) Denmark</option>
+<option value="253">(+253) Djibouti</option>
+<option value="1767">(+1767) Dominica</option>
+<option value="1809">(+1809) Dominican Republic</option>
+<option value="670">(+670) East Timor</option>
+<option value="593">(+593) Ecuador</option>
+<option value="20">(+20) Egypt</option>
+<option value="503">(+503) El Salvador</option>
+<option value="240">(+240) Equatorial Guinea</option>
+<option value="291">(+291) Eritrea</option>
+<option value="372">(+372) Estonia</option>
+<option value="251">(+251) Ethiopia</option>
+<option value="61">(+61) External Territories of Australia</option>
+<option value="500">(+500) Falkland Islands</option>
+<option value="298">(+298) Faroe Islands</option>
+<option value="679">(+679) Fiji Islands</option>
+<option value="358">(+358) Finland</option>
+<option value="33">(+33) France</option>
+<option value="594">(+594) French Guiana</option>
+<option value="689">(+689) French Polynesia</option>
+<option value="0">(+0) French Southern Territories</option>
+<option value="241">(+241) Gabon</option>
+<option value="220">(+220) Gambia The</option>
+<option value="995">(+995) Georgia</option>
+<option value="49">(+49) Germany</option>
+<option value="233">(+233) Ghana</option>
+<option value="350">(+350) Gibraltar</option>
+<option value="30">(+30) Greece</option>
+<option value="299">(+299) Greenland</option>
+<option value="1473">(+1473) Grenada</option>
+<option value="590">(+590) Guadeloupe</option>
+<option value="1671">(+1671) Guam</option>
+<option value="502">(+502) Guatemala</option>
+<option value="44">(+44) Guernsey and Alderney</option>
+<option value="224">(+224) Guinea</option>
+<option value="245">(+245) Guinea-Bissau</option>
+<option value="592">(+592) Guyana</option>
+<option value="509">(+509) Haiti</option>
+<option value="0">(+0) Heard and McDonald Islands</option>
+<option value="504">(+504) Honduras</option>
+<option value="852">(+852) Hong Kong S.A.R.</option>
+<option value="36">(+36) Hungary</option>
+<option value="354">(+354) Iceland</option>
+<option selected="selected" value="91">(+91) India</option>
+<option value="62">(+62) Indonesia</option>
+<option value="98">(+98) Iran</option>
+<option value="964">(+964) Iraq</option>
+<option value="353">(+353) Ireland</option>
+<option value="972">(+972) Israel</option>
+<option value="39">(+39) Italy</option>
+<option value="1876">(+1876) Jamaica</option>
+<option value="81">(+81) Japan</option>
+<option value="44">(+44) Jersey</option>
+<option value="962">(+962) Jordan</option>
+<option value="7">(+7) Kazakhstan</option>
+<option value="254">(+254) Kenya</option>
+<option value="686">(+686) Kiribati</option>
+<option value="850">(+850) Korea North</option>
+<option value="82">(+82) Korea South</option>
+<option value="965">(+965) Kuwait</option>
+<option value="996">(+996) Kyrgyzstan</option>
+<option value="856">(+856) Laos</option>
+<option value="371">(+371) Latvia</option>
+<option value="961">(+961) Lebanon</option>
+<option value="266">(+266) Lesotho</option>
+<option value="231">(+231) Liberia</option>
+<option value="218">(+218) Libya</option>
+<option value="423">(+423) Liechtenstein</option>
+<option value="370">(+370) Lithuania</option>
+<option value="352">(+352) Luxembourg</option>
+<option value="853">(+853) Macau S.A.R.</option>
+<option value="389">(+389) Macedonia</option>
+<option value="261">(+261) Madagascar</option>
+<option value="265">(+265) Malawi</option>
+<option value="60">(+60) Malaysia</option>
+<option value="960">(+960) Maldives</option>
+<option value="223">(+223) Mali</option>
+<option value="356">(+356) Malta</option>
+<option value="44">(+44) Man (Isle of)</option>
+<option value="692">(+692) Marshall Islands</option>
+<option value="596">(+596) Martinique</option>
+<option value="222">(+222) Mauritania</option>
+<option value="230">(+230) Mauritius</option>
+<option value="269">(+269) Mayotte</option>
+<option value="52">(+52) Mexico</option>
+<option value="691">(+691) Micronesia</option>
+<option value="373">(+373) Moldova</option>
+<option value="377">(+377) Monaco</option>
+<option value="976">(+976) Mongolia</option>
+<option value="1664">(+1664) Montserrat</option>
+<option value="212">(+212) Morocco</option>
+<option value="258">(+258) Mozambique</option>
+<option value="95">(+95) Myanmar</option>
+<option value="264">(+264) Namibia</option>
+<option value="674">(+674) Nauru</option>
+<option value="977">(+977) Nepal</option>
+<option value="599">(+599) Netherlands Antilles</option>
+<option value="31">(+31) Netherlands The</option>
+<option value="687">(+687) New Caledonia</option>
+<option value="64">(+64) New Zealand</option>
+<option value="505">(+505) Nicaragua</option>
+<option value="227">(+227) Niger</option>
+<option value="234">(+234) Nigeria</option>
+<option value="683">(+683) Niue</option>
+<option value="672">(+672) Norfolk Island</option>
+<option value="1670">(+1670) Northern Mariana Islands</option>
+<option value="47">(+47) Norway</option>
+<option value="968">(+968) Oman</option>
+<option value="92">(+92) Pakistan</option>
+<option value="680">(+680) Palau</option>
+<option value="970">(+970) Palestinian Territory Occupied</option>
+<option value="507">(+507) Panama</option>
+<option value="675">(+675) Papua new Guinea</option>
+<option value="595">(+595) Paraguay</option>
+<option value="51">(+51) Peru</option>
+<option value="63">(+63) Philippines</option>
+<option value="0">(+0) Pitcairn Island</option>
+<option value="48">(+48) Poland</option>
+<option value="351">(+351) Portugal</option>
+<option value="1787">(+1787) Puerto Rico</option>
+<option value="974">(+974) Qatar</option>
+<option value="262">(+262) Reunion</option>
+<option value="40">(+40) Romania</option>
+<option value="70">(+70) Russia</option>
+<option value="250">(+250) Rwanda</option>
+<option value="290">(+290) Saint Helena</option>
+<option value="1869">(+1869) Saint Kitts And Nevis</option>
+<option value="1758">(+1758) Saint Lucia</option>
+<option value="508">(+508) Saint Pierre and Miquelon</option>
+<option value="1784">(+1784) Saint Vincent And The Grenadines</option>
+<option value="684">(+684) Samoa</option>
+<option value="378">(+378) San Marino</option>
+<option value="239">(+239) Sao Tome and Principe</option>
+<option value="966">(+966) Saudi Arabia</option>
+<option value="221">(+221) Senegal</option>
+<option value="381">(+381) Serbia</option>
+<option value="248">(+248) Seychelles</option>
+<option value="232">(+232) Sierra Leone</option>
+<option value="65">(+65) Singapore</option>
+<option value="421">(+421) Slovakia</option>
+<option value="386">(+386) Slovenia</option>
+<option value="44">(+44) Smaller Territories of the UK</option>
+<option value="677">(+677) Solomon Islands</option>
+<option value="252">(+252) Somalia</option>
+<option value="27">(+27) South Africa</option>
+<option value="0">(+0) South Georgia</option>
+<option value="211">(+211) South Sudan</option>
+<option value="34">(+34) Spain</option>
+<option value="94">(+94) Sri Lanka</option>
+<option value="249">(+249) Sudan</option>
+<option value="597">(+597) Suriname</option>
+<option value="47">(+47) Svalbard And Jan Mayen Islands</option>
+<option value="268">(+268) Swaziland</option>
+<option value="46">(+46) Sweden</option>
+<option value="41">(+41) Switzerland</option>
+<option value="963">(+963) Syria</option>
+<option value="886">(+886) Taiwan</option>
+<option value="992">(+992) Tajikistan</option>
+<option value="255">(+255) Tanzania</option>
+<option value="66">(+66) Thailand</option>
+<option value="228">(+228) Togo</option>
+<option value="690">(+690) Tokelau</option>
+<option value="676">(+676) Tonga</option>
+<option value="1868">(+1868) Trinidad And Tobago</option>
+<option value="216">(+216) Tunisia</option>
+<option value="90">(+90) Turkey</option>
+<option value="7370">(+7370) Turkmenistan</option>
+<option value="1649">(+1649) Turks And Caicos Islands</option>
+<option value="688">(+688) Tuvalu</option>
+<option value="256">(+256) Uganda</option>
+<option value="380">(+380) Ukraine</option>
+<option value="971">(+971) United Arab Emirates</option>
+<option value="44">(+44) United Kingdom</option>
+<option value="1">(+1) United States</option>
+<option value="1">(+1) United States Minor Outlying Islands</option>
+<option value="598">(+598) Uruguay</option>
+<option value="998">(+998) Uzbekistan</option>
+<option value="678">(+678) Vanuatu</option>
+<option value="39">(+39) Vatican City State (Holy See)</option>
+<option value="58">(+58) Venezuela</option>
+<option value="84">(+84) Vietnam</option>
+<option value="1284">(+1284) Virgin Islands (British)</option>
+<option value="1340">(+1340) Virgin Islands (US)</option>
+<option value="681">(+681) Wallis And Futuna Islands</option>
+<option value="212">(+212) Western Sahara</option>
+<option value="967">(+967) Yemen</option>
+<option value="38">(+38) Yugoslavia</option>
+<option value="260">(+260) Zambia</option>
+<option value="263">(+263) Zimbabwe</option>
+</select>
+                    <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Mobile Number must be a string with a maximum length of 10." data-val-length-max="10" data-val-regex="Please enter a valid mobile number." data-val-regex-pattern="^(\d{10})$" id="InfAccount_BrandList_5b852099-ea16-4371-9cac-b6f0bb183ad5__Contact_Phone" maxlength="10" name="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Phone" placeholder="Contact Mobile Number" style="width:57%; display:inline-block" type="text" value="" />
+                </div>
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[5b852099-ea16-4371-9cac-b6f0bb183ad5].Contact_Phone" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-md-6 col-sm-12">
+                <button type="button" id="1cb0ea20b3de4d7288a2e3707813d045" class="btn btn-danger smallButton btnDeleteBrand" title="Delete">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <hr />
+    </div>
+<input type="hidden" name="InfAccount.BrandList.index" autocomplete="off" value="364b781d-c4ca-4631-9f64-aae8ad21d155" />
+    <div id="brand-0bc553d18ef3454f8409775115ce8642">
+        <input data-val="true" data-val-number="The field ID must be a number." id="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__ID" name="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].ID" type="hidden" value="12" />
+        <div class="form-group">
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Brand_Name">Brand Name</label>
+                <span class="color-red">*</span>
+                <input class="form-control inf-brand-name text-box single-line" data-val="true" data-val-length="The field Brand Name must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w.+ ]+)$" data-val-required="The Brand Name field is required." id="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Brand_Name" maxlength="50" name="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Brand_Name" placeholder="Brand Name" type="text" value="Addidas" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Brand_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Name">Contact Full Name</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Full Name must be a string with a maximum length of 100." data-val-length-max="100" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w ]+)$" id="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Name" maxlength="100" name="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Name" placeholder="Contact Name" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Email">Contact Email</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Email must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Please enter a valid e-mail address." data-val-regex-pattern="^[\w\+-]+(\.[\w\+-]+)*@[a-z0-9-]+(\.[a-z0-9]+)*\.([a-z]{2,4})$" id="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Email" maxlength="50" name="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Email" placeholder="Contact Email Address" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Email" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Phone">Contact Mobile Number</label>
+                <div>
+                    <select class="form-control" id="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Phone_Code" name="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Phone_Code" style="width:40%; display:inline-block"><option value="">--Please Select--</option>
+<option value="93">(+93) Afghanistan</option>
+<option value="355">(+355) Albania</option>
+<option value="213">(+213) Algeria</option>
+<option value="1684">(+1684) American Samoa</option>
+<option value="376">(+376) Andorra</option>
+<option value="244">(+244) Angola</option>
+<option value="1264">(+1264) Anguilla</option>
+<option value="0">(+0) Antarctica</option>
+<option value="1268">(+1268) Antigua And Barbuda</option>
+<option value="54">(+54) Argentina</option>
+<option value="374">(+374) Armenia</option>
+<option value="297">(+297) Aruba</option>
+<option value="61">(+61) Australia</option>
+<option value="43">(+43) Austria</option>
+<option value="994">(+994) Azerbaijan</option>
+<option value="1242">(+1242) Bahamas The</option>
+<option value="973">(+973) Bahrain</option>
+<option value="880">(+880) Bangladesh</option>
+<option value="1246">(+1246) Barbados</option>
+<option value="375">(+375) Belarus</option>
+<option value="32">(+32) Belgium</option>
+<option value="501">(+501) Belize</option>
+<option value="229">(+229) Benin</option>
+<option value="1441">(+1441) Bermuda</option>
+<option value="975">(+975) Bhutan</option>
+<option value="591">(+591) Bolivia</option>
+<option value="387">(+387) Bosnia and Herzegovina</option>
+<option value="267">(+267) Botswana</option>
+<option value="0">(+0) Bouvet Island</option>
+<option value="55">(+55) Brazil</option>
+<option value="246">(+246) British Indian Ocean Territory</option>
+<option value="673">(+673) Brunei</option>
+<option value="359">(+359) Bulgaria</option>
+<option value="226">(+226) Burkina Faso</option>
+<option value="257">(+257) Burundi</option>
+<option value="855">(+855) Cambodia</option>
+<option value="237">(+237) Cameroon</option>
+<option value="1">(+1) Canada</option>
+<option value="238">(+238) Cape Verde</option>
+<option value="1345">(+1345) Cayman Islands</option>
+<option value="236">(+236) Central African Republic</option>
+<option value="235">(+235) Chad</option>
+<option value="56">(+56) Chile</option>
+<option value="86">(+86) China</option>
+<option value="61">(+61) Christmas Island</option>
+<option value="672">(+672) Cocos (Keeling) Islands</option>
+<option value="57">(+57) Colombia</option>
+<option value="269">(+269) Comoros</option>
+<option value="242">(+242) Republic Of The Congo</option>
+<option value="242">(+242) Democratic Republic Of The Congo</option>
+<option value="682">(+682) Cook Islands</option>
+<option value="506">(+506) Costa Rica</option>
+<option value="225">(+225) Cote D&#39;Ivoire (Ivory Coast)</option>
+<option value="385">(+385) Croatia (Hrvatska)</option>
+<option value="53">(+53) Cuba</option>
+<option value="357">(+357) Cyprus</option>
+<option value="420">(+420) Czech Republic</option>
+<option value="45">(+45) Denmark</option>
+<option value="253">(+253) Djibouti</option>
+<option value="1767">(+1767) Dominica</option>
+<option value="1809">(+1809) Dominican Republic</option>
+<option value="670">(+670) East Timor</option>
+<option value="593">(+593) Ecuador</option>
+<option value="20">(+20) Egypt</option>
+<option value="503">(+503) El Salvador</option>
+<option value="240">(+240) Equatorial Guinea</option>
+<option value="291">(+291) Eritrea</option>
+<option value="372">(+372) Estonia</option>
+<option value="251">(+251) Ethiopia</option>
+<option value="61">(+61) External Territories of Australia</option>
+<option value="500">(+500) Falkland Islands</option>
+<option value="298">(+298) Faroe Islands</option>
+<option value="679">(+679) Fiji Islands</option>
+<option value="358">(+358) Finland</option>
+<option value="33">(+33) France</option>
+<option value="594">(+594) French Guiana</option>
+<option value="689">(+689) French Polynesia</option>
+<option value="0">(+0) French Southern Territories</option>
+<option value="241">(+241) Gabon</option>
+<option value="220">(+220) Gambia The</option>
+<option value="995">(+995) Georgia</option>
+<option value="49">(+49) Germany</option>
+<option value="233">(+233) Ghana</option>
+<option value="350">(+350) Gibraltar</option>
+<option value="30">(+30) Greece</option>
+<option value="299">(+299) Greenland</option>
+<option value="1473">(+1473) Grenada</option>
+<option value="590">(+590) Guadeloupe</option>
+<option value="1671">(+1671) Guam</option>
+<option value="502">(+502) Guatemala</option>
+<option value="44">(+44) Guernsey and Alderney</option>
+<option value="224">(+224) Guinea</option>
+<option value="245">(+245) Guinea-Bissau</option>
+<option value="592">(+592) Guyana</option>
+<option value="509">(+509) Haiti</option>
+<option value="0">(+0) Heard and McDonald Islands</option>
+<option value="504">(+504) Honduras</option>
+<option value="852">(+852) Hong Kong S.A.R.</option>
+<option value="36">(+36) Hungary</option>
+<option value="354">(+354) Iceland</option>
+<option selected="selected" value="91">(+91) India</option>
+<option value="62">(+62) Indonesia</option>
+<option value="98">(+98) Iran</option>
+<option value="964">(+964) Iraq</option>
+<option value="353">(+353) Ireland</option>
+<option value="972">(+972) Israel</option>
+<option value="39">(+39) Italy</option>
+<option value="1876">(+1876) Jamaica</option>
+<option value="81">(+81) Japan</option>
+<option value="44">(+44) Jersey</option>
+<option value="962">(+962) Jordan</option>
+<option value="7">(+7) Kazakhstan</option>
+<option value="254">(+254) Kenya</option>
+<option value="686">(+686) Kiribati</option>
+<option value="850">(+850) Korea North</option>
+<option value="82">(+82) Korea South</option>
+<option value="965">(+965) Kuwait</option>
+<option value="996">(+996) Kyrgyzstan</option>
+<option value="856">(+856) Laos</option>
+<option value="371">(+371) Latvia</option>
+<option value="961">(+961) Lebanon</option>
+<option value="266">(+266) Lesotho</option>
+<option value="231">(+231) Liberia</option>
+<option value="218">(+218) Libya</option>
+<option value="423">(+423) Liechtenstein</option>
+<option value="370">(+370) Lithuania</option>
+<option value="352">(+352) Luxembourg</option>
+<option value="853">(+853) Macau S.A.R.</option>
+<option value="389">(+389) Macedonia</option>
+<option value="261">(+261) Madagascar</option>
+<option value="265">(+265) Malawi</option>
+<option value="60">(+60) Malaysia</option>
+<option value="960">(+960) Maldives</option>
+<option value="223">(+223) Mali</option>
+<option value="356">(+356) Malta</option>
+<option value="44">(+44) Man (Isle of)</option>
+<option value="692">(+692) Marshall Islands</option>
+<option value="596">(+596) Martinique</option>
+<option value="222">(+222) Mauritania</option>
+<option value="230">(+230) Mauritius</option>
+<option value="269">(+269) Mayotte</option>
+<option value="52">(+52) Mexico</option>
+<option value="691">(+691) Micronesia</option>
+<option value="373">(+373) Moldova</option>
+<option value="377">(+377) Monaco</option>
+<option value="976">(+976) Mongolia</option>
+<option value="1664">(+1664) Montserrat</option>
+<option value="212">(+212) Morocco</option>
+<option value="258">(+258) Mozambique</option>
+<option value="95">(+95) Myanmar</option>
+<option value="264">(+264) Namibia</option>
+<option value="674">(+674) Nauru</option>
+<option value="977">(+977) Nepal</option>
+<option value="599">(+599) Netherlands Antilles</option>
+<option value="31">(+31) Netherlands The</option>
+<option value="687">(+687) New Caledonia</option>
+<option value="64">(+64) New Zealand</option>
+<option value="505">(+505) Nicaragua</option>
+<option value="227">(+227) Niger</option>
+<option value="234">(+234) Nigeria</option>
+<option value="683">(+683) Niue</option>
+<option value="672">(+672) Norfolk Island</option>
+<option value="1670">(+1670) Northern Mariana Islands</option>
+<option value="47">(+47) Norway</option>
+<option value="968">(+968) Oman</option>
+<option value="92">(+92) Pakistan</option>
+<option value="680">(+680) Palau</option>
+<option value="970">(+970) Palestinian Territory Occupied</option>
+<option value="507">(+507) Panama</option>
+<option value="675">(+675) Papua new Guinea</option>
+<option value="595">(+595) Paraguay</option>
+<option value="51">(+51) Peru</option>
+<option value="63">(+63) Philippines</option>
+<option value="0">(+0) Pitcairn Island</option>
+<option value="48">(+48) Poland</option>
+<option value="351">(+351) Portugal</option>
+<option value="1787">(+1787) Puerto Rico</option>
+<option value="974">(+974) Qatar</option>
+<option value="262">(+262) Reunion</option>
+<option value="40">(+40) Romania</option>
+<option value="70">(+70) Russia</option>
+<option value="250">(+250) Rwanda</option>
+<option value="290">(+290) Saint Helena</option>
+<option value="1869">(+1869) Saint Kitts And Nevis</option>
+<option value="1758">(+1758) Saint Lucia</option>
+<option value="508">(+508) Saint Pierre and Miquelon</option>
+<option value="1784">(+1784) Saint Vincent And The Grenadines</option>
+<option value="684">(+684) Samoa</option>
+<option value="378">(+378) San Marino</option>
+<option value="239">(+239) Sao Tome and Principe</option>
+<option value="966">(+966) Saudi Arabia</option>
+<option value="221">(+221) Senegal</option>
+<option value="381">(+381) Serbia</option>
+<option value="248">(+248) Seychelles</option>
+<option value="232">(+232) Sierra Leone</option>
+<option value="65">(+65) Singapore</option>
+<option value="421">(+421) Slovakia</option>
+<option value="386">(+386) Slovenia</option>
+<option value="44">(+44) Smaller Territories of the UK</option>
+<option value="677">(+677) Solomon Islands</option>
+<option value="252">(+252) Somalia</option>
+<option value="27">(+27) South Africa</option>
+<option value="0">(+0) South Georgia</option>
+<option value="211">(+211) South Sudan</option>
+<option value="34">(+34) Spain</option>
+<option value="94">(+94) Sri Lanka</option>
+<option value="249">(+249) Sudan</option>
+<option value="597">(+597) Suriname</option>
+<option value="47">(+47) Svalbard And Jan Mayen Islands</option>
+<option value="268">(+268) Swaziland</option>
+<option value="46">(+46) Sweden</option>
+<option value="41">(+41) Switzerland</option>
+<option value="963">(+963) Syria</option>
+<option value="886">(+886) Taiwan</option>
+<option value="992">(+992) Tajikistan</option>
+<option value="255">(+255) Tanzania</option>
+<option value="66">(+66) Thailand</option>
+<option value="228">(+228) Togo</option>
+<option value="690">(+690) Tokelau</option>
+<option value="676">(+676) Tonga</option>
+<option value="1868">(+1868) Trinidad And Tobago</option>
+<option value="216">(+216) Tunisia</option>
+<option value="90">(+90) Turkey</option>
+<option value="7370">(+7370) Turkmenistan</option>
+<option value="1649">(+1649) Turks And Caicos Islands</option>
+<option value="688">(+688) Tuvalu</option>
+<option value="256">(+256) Uganda</option>
+<option value="380">(+380) Ukraine</option>
+<option value="971">(+971) United Arab Emirates</option>
+<option value="44">(+44) United Kingdom</option>
+<option value="1">(+1) United States</option>
+<option value="1">(+1) United States Minor Outlying Islands</option>
+<option value="598">(+598) Uruguay</option>
+<option value="998">(+998) Uzbekistan</option>
+<option value="678">(+678) Vanuatu</option>
+<option value="39">(+39) Vatican City State (Holy See)</option>
+<option value="58">(+58) Venezuela</option>
+<option value="84">(+84) Vietnam</option>
+<option value="1284">(+1284) Virgin Islands (British)</option>
+<option value="1340">(+1340) Virgin Islands (US)</option>
+<option value="681">(+681) Wallis And Futuna Islands</option>
+<option value="212">(+212) Western Sahara</option>
+<option value="967">(+967) Yemen</option>
+<option value="38">(+38) Yugoslavia</option>
+<option value="260">(+260) Zambia</option>
+<option value="263">(+263) Zimbabwe</option>
+</select>
+                    <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Mobile Number must be a string with a maximum length of 10." data-val-length-max="10" data-val-regex="Please enter a valid mobile number." data-val-regex-pattern="^(\d{10})$" id="InfAccount_BrandList_364b781d-c4ca-4631-9f64-aae8ad21d155__Contact_Phone" maxlength="10" name="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Phone" placeholder="Contact Mobile Number" style="width:57%; display:inline-block" type="text" value="" />
+                </div>
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[364b781d-c4ca-4631-9f64-aae8ad21d155].Contact_Phone" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-md-6 col-sm-12">
+                <button type="button" id="0bc553d18ef3454f8409775115ce8642" class="btn btn-danger smallButton btnDeleteBrand" title="Delete">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <hr />
+    </div>
+<input type="hidden" name="InfAccount.BrandList.index" autocomplete="off" value="2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d" />
+    <div id="brand-6330467544024cccb37b7055ce31a6af">
+        <input data-val="true" data-val-number="The field ID must be a number." id="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__ID" name="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].ID" type="hidden" value="13" />
+        <div class="form-group">
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Brand_Name">Brand Name</label>
+                <span class="color-red">*</span>
+                <input class="form-control inf-brand-name text-box single-line" data-val="true" data-val-length="The field Brand Name must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w.+ ]+)$" data-val-required="The Brand Name field is required." id="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Brand_Name" maxlength="50" name="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Brand_Name" placeholder="Brand Name" type="text" value="Reebok" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Brand_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Name">Contact Full Name</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Full Name must be a string with a maximum length of 100." data-val-length-max="100" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w ]+)$" id="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Name" maxlength="100" name="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Name" placeholder="Contact Name" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Email">Contact Email</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Email must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Please enter a valid e-mail address." data-val-regex-pattern="^[\w\+-]+(\.[\w\+-]+)*@[a-z0-9-]+(\.[a-z0-9]+)*\.([a-z]{2,4})$" id="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Email" maxlength="50" name="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Email" placeholder="Contact Email Address" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Email" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Phone">Contact Mobile Number</label>
+                <div>
+                    <select class="form-control" id="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Phone_Code" name="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Phone_Code" style="width:40%; display:inline-block"><option value="">--Please Select--</option>
+<option value="93">(+93) Afghanistan</option>
+<option value="355">(+355) Albania</option>
+<option value="213">(+213) Algeria</option>
+<option value="1684">(+1684) American Samoa</option>
+<option value="376">(+376) Andorra</option>
+<option value="244">(+244) Angola</option>
+<option value="1264">(+1264) Anguilla</option>
+<option value="0">(+0) Antarctica</option>
+<option value="1268">(+1268) Antigua And Barbuda</option>
+<option value="54">(+54) Argentina</option>
+<option value="374">(+374) Armenia</option>
+<option value="297">(+297) Aruba</option>
+<option value="61">(+61) Australia</option>
+<option value="43">(+43) Austria</option>
+<option value="994">(+994) Azerbaijan</option>
+<option value="1242">(+1242) Bahamas The</option>
+<option value="973">(+973) Bahrain</option>
+<option value="880">(+880) Bangladesh</option>
+<option value="1246">(+1246) Barbados</option>
+<option value="375">(+375) Belarus</option>
+<option value="32">(+32) Belgium</option>
+<option value="501">(+501) Belize</option>
+<option value="229">(+229) Benin</option>
+<option value="1441">(+1441) Bermuda</option>
+<option value="975">(+975) Bhutan</option>
+<option value="591">(+591) Bolivia</option>
+<option value="387">(+387) Bosnia and Herzegovina</option>
+<option value="267">(+267) Botswana</option>
+<option value="0">(+0) Bouvet Island</option>
+<option value="55">(+55) Brazil</option>
+<option value="246">(+246) British Indian Ocean Territory</option>
+<option value="673">(+673) Brunei</option>
+<option value="359">(+359) Bulgaria</option>
+<option value="226">(+226) Burkina Faso</option>
+<option value="257">(+257) Burundi</option>
+<option value="855">(+855) Cambodia</option>
+<option value="237">(+237) Cameroon</option>
+<option value="1">(+1) Canada</option>
+<option value="238">(+238) Cape Verde</option>
+<option value="1345">(+1345) Cayman Islands</option>
+<option value="236">(+236) Central African Republic</option>
+<option value="235">(+235) Chad</option>
+<option value="56">(+56) Chile</option>
+<option value="86">(+86) China</option>
+<option value="61">(+61) Christmas Island</option>
+<option value="672">(+672) Cocos (Keeling) Islands</option>
+<option value="57">(+57) Colombia</option>
+<option value="269">(+269) Comoros</option>
+<option value="242">(+242) Republic Of The Congo</option>
+<option value="242">(+242) Democratic Republic Of The Congo</option>
+<option value="682">(+682) Cook Islands</option>
+<option value="506">(+506) Costa Rica</option>
+<option value="225">(+225) Cote D&#39;Ivoire (Ivory Coast)</option>
+<option value="385">(+385) Croatia (Hrvatska)</option>
+<option value="53">(+53) Cuba</option>
+<option value="357">(+357) Cyprus</option>
+<option value="420">(+420) Czech Republic</option>
+<option value="45">(+45) Denmark</option>
+<option value="253">(+253) Djibouti</option>
+<option value="1767">(+1767) Dominica</option>
+<option value="1809">(+1809) Dominican Republic</option>
+<option value="670">(+670) East Timor</option>
+<option value="593">(+593) Ecuador</option>
+<option value="20">(+20) Egypt</option>
+<option value="503">(+503) El Salvador</option>
+<option value="240">(+240) Equatorial Guinea</option>
+<option value="291">(+291) Eritrea</option>
+<option value="372">(+372) Estonia</option>
+<option value="251">(+251) Ethiopia</option>
+<option value="61">(+61) External Territories of Australia</option>
+<option value="500">(+500) Falkland Islands</option>
+<option value="298">(+298) Faroe Islands</option>
+<option value="679">(+679) Fiji Islands</option>
+<option value="358">(+358) Finland</option>
+<option value="33">(+33) France</option>
+<option value="594">(+594) French Guiana</option>
+<option value="689">(+689) French Polynesia</option>
+<option value="0">(+0) French Southern Territories</option>
+<option value="241">(+241) Gabon</option>
+<option value="220">(+220) Gambia The</option>
+<option value="995">(+995) Georgia</option>
+<option value="49">(+49) Germany</option>
+<option value="233">(+233) Ghana</option>
+<option value="350">(+350) Gibraltar</option>
+<option value="30">(+30) Greece</option>
+<option value="299">(+299) Greenland</option>
+<option value="1473">(+1473) Grenada</option>
+<option value="590">(+590) Guadeloupe</option>
+<option value="1671">(+1671) Guam</option>
+<option value="502">(+502) Guatemala</option>
+<option value="44">(+44) Guernsey and Alderney</option>
+<option value="224">(+224) Guinea</option>
+<option value="245">(+245) Guinea-Bissau</option>
+<option value="592">(+592) Guyana</option>
+<option value="509">(+509) Haiti</option>
+<option value="0">(+0) Heard and McDonald Islands</option>
+<option value="504">(+504) Honduras</option>
+<option value="852">(+852) Hong Kong S.A.R.</option>
+<option value="36">(+36) Hungary</option>
+<option value="354">(+354) Iceland</option>
+<option selected="selected" value="91">(+91) India</option>
+<option value="62">(+62) Indonesia</option>
+<option value="98">(+98) Iran</option>
+<option value="964">(+964) Iraq</option>
+<option value="353">(+353) Ireland</option>
+<option value="972">(+972) Israel</option>
+<option value="39">(+39) Italy</option>
+<option value="1876">(+1876) Jamaica</option>
+<option value="81">(+81) Japan</option>
+<option value="44">(+44) Jersey</option>
+<option value="962">(+962) Jordan</option>
+<option value="7">(+7) Kazakhstan</option>
+<option value="254">(+254) Kenya</option>
+<option value="686">(+686) Kiribati</option>
+<option value="850">(+850) Korea North</option>
+<option value="82">(+82) Korea South</option>
+<option value="965">(+965) Kuwait</option>
+<option value="996">(+996) Kyrgyzstan</option>
+<option value="856">(+856) Laos</option>
+<option value="371">(+371) Latvia</option>
+<option value="961">(+961) Lebanon</option>
+<option value="266">(+266) Lesotho</option>
+<option value="231">(+231) Liberia</option>
+<option value="218">(+218) Libya</option>
+<option value="423">(+423) Liechtenstein</option>
+<option value="370">(+370) Lithuania</option>
+<option value="352">(+352) Luxembourg</option>
+<option value="853">(+853) Macau S.A.R.</option>
+<option value="389">(+389) Macedonia</option>
+<option value="261">(+261) Madagascar</option>
+<option value="265">(+265) Malawi</option>
+<option value="60">(+60) Malaysia</option>
+<option value="960">(+960) Maldives</option>
+<option value="223">(+223) Mali</option>
+<option value="356">(+356) Malta</option>
+<option value="44">(+44) Man (Isle of)</option>
+<option value="692">(+692) Marshall Islands</option>
+<option value="596">(+596) Martinique</option>
+<option value="222">(+222) Mauritania</option>
+<option value="230">(+230) Mauritius</option>
+<option value="269">(+269) Mayotte</option>
+<option value="52">(+52) Mexico</option>
+<option value="691">(+691) Micronesia</option>
+<option value="373">(+373) Moldova</option>
+<option value="377">(+377) Monaco</option>
+<option value="976">(+976) Mongolia</option>
+<option value="1664">(+1664) Montserrat</option>
+<option value="212">(+212) Morocco</option>
+<option value="258">(+258) Mozambique</option>
+<option value="95">(+95) Myanmar</option>
+<option value="264">(+264) Namibia</option>
+<option value="674">(+674) Nauru</option>
+<option value="977">(+977) Nepal</option>
+<option value="599">(+599) Netherlands Antilles</option>
+<option value="31">(+31) Netherlands The</option>
+<option value="687">(+687) New Caledonia</option>
+<option value="64">(+64) New Zealand</option>
+<option value="505">(+505) Nicaragua</option>
+<option value="227">(+227) Niger</option>
+<option value="234">(+234) Nigeria</option>
+<option value="683">(+683) Niue</option>
+<option value="672">(+672) Norfolk Island</option>
+<option value="1670">(+1670) Northern Mariana Islands</option>
+<option value="47">(+47) Norway</option>
+<option value="968">(+968) Oman</option>
+<option value="92">(+92) Pakistan</option>
+<option value="680">(+680) Palau</option>
+<option value="970">(+970) Palestinian Territory Occupied</option>
+<option value="507">(+507) Panama</option>
+<option value="675">(+675) Papua new Guinea</option>
+<option value="595">(+595) Paraguay</option>
+<option value="51">(+51) Peru</option>
+<option value="63">(+63) Philippines</option>
+<option value="0">(+0) Pitcairn Island</option>
+<option value="48">(+48) Poland</option>
+<option value="351">(+351) Portugal</option>
+<option value="1787">(+1787) Puerto Rico</option>
+<option value="974">(+974) Qatar</option>
+<option value="262">(+262) Reunion</option>
+<option value="40">(+40) Romania</option>
+<option value="70">(+70) Russia</option>
+<option value="250">(+250) Rwanda</option>
+<option value="290">(+290) Saint Helena</option>
+<option value="1869">(+1869) Saint Kitts And Nevis</option>
+<option value="1758">(+1758) Saint Lucia</option>
+<option value="508">(+508) Saint Pierre and Miquelon</option>
+<option value="1784">(+1784) Saint Vincent And The Grenadines</option>
+<option value="684">(+684) Samoa</option>
+<option value="378">(+378) San Marino</option>
+<option value="239">(+239) Sao Tome and Principe</option>
+<option value="966">(+966) Saudi Arabia</option>
+<option value="221">(+221) Senegal</option>
+<option value="381">(+381) Serbia</option>
+<option value="248">(+248) Seychelles</option>
+<option value="232">(+232) Sierra Leone</option>
+<option value="65">(+65) Singapore</option>
+<option value="421">(+421) Slovakia</option>
+<option value="386">(+386) Slovenia</option>
+<option value="44">(+44) Smaller Territories of the UK</option>
+<option value="677">(+677) Solomon Islands</option>
+<option value="252">(+252) Somalia</option>
+<option value="27">(+27) South Africa</option>
+<option value="0">(+0) South Georgia</option>
+<option value="211">(+211) South Sudan</option>
+<option value="34">(+34) Spain</option>
+<option value="94">(+94) Sri Lanka</option>
+<option value="249">(+249) Sudan</option>
+<option value="597">(+597) Suriname</option>
+<option value="47">(+47) Svalbard And Jan Mayen Islands</option>
+<option value="268">(+268) Swaziland</option>
+<option value="46">(+46) Sweden</option>
+<option value="41">(+41) Switzerland</option>
+<option value="963">(+963) Syria</option>
+<option value="886">(+886) Taiwan</option>
+<option value="992">(+992) Tajikistan</option>
+<option value="255">(+255) Tanzania</option>
+<option value="66">(+66) Thailand</option>
+<option value="228">(+228) Togo</option>
+<option value="690">(+690) Tokelau</option>
+<option value="676">(+676) Tonga</option>
+<option value="1868">(+1868) Trinidad And Tobago</option>
+<option value="216">(+216) Tunisia</option>
+<option value="90">(+90) Turkey</option>
+<option value="7370">(+7370) Turkmenistan</option>
+<option value="1649">(+1649) Turks And Caicos Islands</option>
+<option value="688">(+688) Tuvalu</option>
+<option value="256">(+256) Uganda</option>
+<option value="380">(+380) Ukraine</option>
+<option value="971">(+971) United Arab Emirates</option>
+<option value="44">(+44) United Kingdom</option>
+<option value="1">(+1) United States</option>
+<option value="1">(+1) United States Minor Outlying Islands</option>
+<option value="598">(+598) Uruguay</option>
+<option value="998">(+998) Uzbekistan</option>
+<option value="678">(+678) Vanuatu</option>
+<option value="39">(+39) Vatican City State (Holy See)</option>
+<option value="58">(+58) Venezuela</option>
+<option value="84">(+84) Vietnam</option>
+<option value="1284">(+1284) Virgin Islands (British)</option>
+<option value="1340">(+1340) Virgin Islands (US)</option>
+<option value="681">(+681) Wallis And Futuna Islands</option>
+<option value="212">(+212) Western Sahara</option>
+<option value="967">(+967) Yemen</option>
+<option value="38">(+38) Yugoslavia</option>
+<option value="260">(+260) Zambia</option>
+<option value="263">(+263) Zimbabwe</option>
+</select>
+                    <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Mobile Number must be a string with a maximum length of 10." data-val-length-max="10" data-val-regex="Please enter a valid mobile number." data-val-regex-pattern="^(\d{10})$" id="InfAccount_BrandList_2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d__Contact_Phone" maxlength="10" name="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Phone" placeholder="Contact Mobile Number" style="width:57%; display:inline-block" type="text" value="" />
+                </div>
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[2fb5a9de-ac4a-4ea2-b16d-ce7a8f93ae4d].Contact_Phone" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-md-6 col-sm-12">
+                <button type="button" id="6330467544024cccb37b7055ce31a6af" class="btn btn-danger smallButton btnDeleteBrand" title="Delete">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <hr />
+    </div>
+<input type="hidden" name="InfAccount.BrandList.index" autocomplete="off" value="4a35a944-1be0-46cf-af61-c2d1a0d95fb2" />
+    <div id="brand-93faec2f69a94c17a1934bcca8b843d4">
+        <input data-val="true" data-val-number="The field ID must be a number." id="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__ID" name="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].ID" type="hidden" value="18" />
+        <div class="form-group">
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Brand_Name">Brand Name</label>
+                <span class="color-red">*</span>
+                <input class="form-control inf-brand-name text-box single-line" data-val="true" data-val-length="The field Brand Name must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w.+ ]+)$" data-val-required="The Brand Name field is required." id="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Brand_Name" maxlength="50" name="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Brand_Name" placeholder="Brand Name" type="text" value="mcaffeine" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Brand_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Name">Contact Full Name</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Full Name must be a string with a maximum length of 100." data-val-length-max="100" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w ]+)$" id="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Name" maxlength="100" name="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Name" placeholder="Contact Name" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Email">Contact Email</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Email must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Please enter a valid e-mail address." data-val-regex-pattern="^[\w\+-]+(\.[\w\+-]+)*@[a-z0-9-]+(\.[a-z0-9]+)*\.([a-z]{2,4})$" id="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Email" maxlength="50" name="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Email" placeholder="Contact Email Address" type="text" value="" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Email" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label" for="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Phone">Contact Mobile Number</label>
+                <div>
+                    <select class="form-control" id="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Phone_Code" name="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Phone_Code" style="width:40%; display:inline-block"><option value="">--Please Select--</option>
+<option value="93">(+93) Afghanistan</option>
+<option value="355">(+355) Albania</option>
+<option value="213">(+213) Algeria</option>
+<option value="1684">(+1684) American Samoa</option>
+<option value="376">(+376) Andorra</option>
+<option value="244">(+244) Angola</option>
+<option value="1264">(+1264) Anguilla</option>
+<option value="0">(+0) Antarctica</option>
+<option value="1268">(+1268) Antigua And Barbuda</option>
+<option value="54">(+54) Argentina</option>
+<option value="374">(+374) Armenia</option>
+<option value="297">(+297) Aruba</option>
+<option value="61">(+61) Australia</option>
+<option value="43">(+43) Austria</option>
+<option value="994">(+994) Azerbaijan</option>
+<option value="1242">(+1242) Bahamas The</option>
+<option value="973">(+973) Bahrain</option>
+<option value="880">(+880) Bangladesh</option>
+<option value="1246">(+1246) Barbados</option>
+<option value="375">(+375) Belarus</option>
+<option value="32">(+32) Belgium</option>
+<option value="501">(+501) Belize</option>
+<option value="229">(+229) Benin</option>
+<option value="1441">(+1441) Bermuda</option>
+<option value="975">(+975) Bhutan</option>
+<option value="591">(+591) Bolivia</option>
+<option value="387">(+387) Bosnia and Herzegovina</option>
+<option value="267">(+267) Botswana</option>
+<option value="0">(+0) Bouvet Island</option>
+<option value="55">(+55) Brazil</option>
+<option value="246">(+246) British Indian Ocean Territory</option>
+<option value="673">(+673) Brunei</option>
+<option value="359">(+359) Bulgaria</option>
+<option value="226">(+226) Burkina Faso</option>
+<option value="257">(+257) Burundi</option>
+<option value="855">(+855) Cambodia</option>
+<option value="237">(+237) Cameroon</option>
+<option value="1">(+1) Canada</option>
+<option value="238">(+238) Cape Verde</option>
+<option value="1345">(+1345) Cayman Islands</option>
+<option value="236">(+236) Central African Republic</option>
+<option value="235">(+235) Chad</option>
+<option value="56">(+56) Chile</option>
+<option value="86">(+86) China</option>
+<option value="61">(+61) Christmas Island</option>
+<option value="672">(+672) Cocos (Keeling) Islands</option>
+<option value="57">(+57) Colombia</option>
+<option value="269">(+269) Comoros</option>
+<option value="242">(+242) Republic Of The Congo</option>
+<option value="242">(+242) Democratic Republic Of The Congo</option>
+<option value="682">(+682) Cook Islands</option>
+<option value="506">(+506) Costa Rica</option>
+<option value="225">(+225) Cote D&#39;Ivoire (Ivory Coast)</option>
+<option value="385">(+385) Croatia (Hrvatska)</option>
+<option value="53">(+53) Cuba</option>
+<option value="357">(+357) Cyprus</option>
+<option value="420">(+420) Czech Republic</option>
+<option value="45">(+45) Denmark</option>
+<option value="253">(+253) Djibouti</option>
+<option value="1767">(+1767) Dominica</option>
+<option value="1809">(+1809) Dominican Republic</option>
+<option value="670">(+670) East Timor</option>
+<option value="593">(+593) Ecuador</option>
+<option value="20">(+20) Egypt</option>
+<option value="503">(+503) El Salvador</option>
+<option value="240">(+240) Equatorial Guinea</option>
+<option value="291">(+291) Eritrea</option>
+<option value="372">(+372) Estonia</option>
+<option value="251">(+251) Ethiopia</option>
+<option value="61">(+61) External Territories of Australia</option>
+<option value="500">(+500) Falkland Islands</option>
+<option value="298">(+298) Faroe Islands</option>
+<option value="679">(+679) Fiji Islands</option>
+<option value="358">(+358) Finland</option>
+<option value="33">(+33) France</option>
+<option value="594">(+594) French Guiana</option>
+<option value="689">(+689) French Polynesia</option>
+<option value="0">(+0) French Southern Territories</option>
+<option value="241">(+241) Gabon</option>
+<option value="220">(+220) Gambia The</option>
+<option value="995">(+995) Georgia</option>
+<option value="49">(+49) Germany</option>
+<option value="233">(+233) Ghana</option>
+<option value="350">(+350) Gibraltar</option>
+<option value="30">(+30) Greece</option>
+<option value="299">(+299) Greenland</option>
+<option value="1473">(+1473) Grenada</option>
+<option value="590">(+590) Guadeloupe</option>
+<option value="1671">(+1671) Guam</option>
+<option value="502">(+502) Guatemala</option>
+<option value="44">(+44) Guernsey and Alderney</option>
+<option value="224">(+224) Guinea</option>
+<option value="245">(+245) Guinea-Bissau</option>
+<option value="592">(+592) Guyana</option>
+<option value="509">(+509) Haiti</option>
+<option value="0">(+0) Heard and McDonald Islands</option>
+<option value="504">(+504) Honduras</option>
+<option value="852">(+852) Hong Kong S.A.R.</option>
+<option value="36">(+36) Hungary</option>
+<option value="354">(+354) Iceland</option>
+<option selected="selected" value="91">(+91) India</option>
+<option value="62">(+62) Indonesia</option>
+<option value="98">(+98) Iran</option>
+<option value="964">(+964) Iraq</option>
+<option value="353">(+353) Ireland</option>
+<option value="972">(+972) Israel</option>
+<option value="39">(+39) Italy</option>
+<option value="1876">(+1876) Jamaica</option>
+<option value="81">(+81) Japan</option>
+<option value="44">(+44) Jersey</option>
+<option value="962">(+962) Jordan</option>
+<option value="7">(+7) Kazakhstan</option>
+<option value="254">(+254) Kenya</option>
+<option value="686">(+686) Kiribati</option>
+<option value="850">(+850) Korea North</option>
+<option value="82">(+82) Korea South</option>
+<option value="965">(+965) Kuwait</option>
+<option value="996">(+996) Kyrgyzstan</option>
+<option value="856">(+856) Laos</option>
+<option value="371">(+371) Latvia</option>
+<option value="961">(+961) Lebanon</option>
+<option value="266">(+266) Lesotho</option>
+<option value="231">(+231) Liberia</option>
+<option value="218">(+218) Libya</option>
+<option value="423">(+423) Liechtenstein</option>
+<option value="370">(+370) Lithuania</option>
+<option value="352">(+352) Luxembourg</option>
+<option value="853">(+853) Macau S.A.R.</option>
+<option value="389">(+389) Macedonia</option>
+<option value="261">(+261) Madagascar</option>
+<option value="265">(+265) Malawi</option>
+<option value="60">(+60) Malaysia</option>
+<option value="960">(+960) Maldives</option>
+<option value="223">(+223) Mali</option>
+<option value="356">(+356) Malta</option>
+<option value="44">(+44) Man (Isle of)</option>
+<option value="692">(+692) Marshall Islands</option>
+<option value="596">(+596) Martinique</option>
+<option value="222">(+222) Mauritania</option>
+<option value="230">(+230) Mauritius</option>
+<option value="269">(+269) Mayotte</option>
+<option value="52">(+52) Mexico</option>
+<option value="691">(+691) Micronesia</option>
+<option value="373">(+373) Moldova</option>
+<option value="377">(+377) Monaco</option>
+<option value="976">(+976) Mongolia</option>
+<option value="1664">(+1664) Montserrat</option>
+<option value="212">(+212) Morocco</option>
+<option value="258">(+258) Mozambique</option>
+<option value="95">(+95) Myanmar</option>
+<option value="264">(+264) Namibia</option>
+<option value="674">(+674) Nauru</option>
+<option value="977">(+977) Nepal</option>
+<option value="599">(+599) Netherlands Antilles</option>
+<option value="31">(+31) Netherlands The</option>
+<option value="687">(+687) New Caledonia</option>
+<option value="64">(+64) New Zealand</option>
+<option value="505">(+505) Nicaragua</option>
+<option value="227">(+227) Niger</option>
+<option value="234">(+234) Nigeria</option>
+<option value="683">(+683) Niue</option>
+<option value="672">(+672) Norfolk Island</option>
+<option value="1670">(+1670) Northern Mariana Islands</option>
+<option value="47">(+47) Norway</option>
+<option value="968">(+968) Oman</option>
+<option value="92">(+92) Pakistan</option>
+<option value="680">(+680) Palau</option>
+<option value="970">(+970) Palestinian Territory Occupied</option>
+<option value="507">(+507) Panama</option>
+<option value="675">(+675) Papua new Guinea</option>
+<option value="595">(+595) Paraguay</option>
+<option value="51">(+51) Peru</option>
+<option value="63">(+63) Philippines</option>
+<option value="0">(+0) Pitcairn Island</option>
+<option value="48">(+48) Poland</option>
+<option value="351">(+351) Portugal</option>
+<option value="1787">(+1787) Puerto Rico</option>
+<option value="974">(+974) Qatar</option>
+<option value="262">(+262) Reunion</option>
+<option value="40">(+40) Romania</option>
+<option value="70">(+70) Russia</option>
+<option value="250">(+250) Rwanda</option>
+<option value="290">(+290) Saint Helena</option>
+<option value="1869">(+1869) Saint Kitts And Nevis</option>
+<option value="1758">(+1758) Saint Lucia</option>
+<option value="508">(+508) Saint Pierre and Miquelon</option>
+<option value="1784">(+1784) Saint Vincent And The Grenadines</option>
+<option value="684">(+684) Samoa</option>
+<option value="378">(+378) San Marino</option>
+<option value="239">(+239) Sao Tome and Principe</option>
+<option value="966">(+966) Saudi Arabia</option>
+<option value="221">(+221) Senegal</option>
+<option value="381">(+381) Serbia</option>
+<option value="248">(+248) Seychelles</option>
+<option value="232">(+232) Sierra Leone</option>
+<option value="65">(+65) Singapore</option>
+<option value="421">(+421) Slovakia</option>
+<option value="386">(+386) Slovenia</option>
+<option value="44">(+44) Smaller Territories of the UK</option>
+<option value="677">(+677) Solomon Islands</option>
+<option value="252">(+252) Somalia</option>
+<option value="27">(+27) South Africa</option>
+<option value="0">(+0) South Georgia</option>
+<option value="211">(+211) South Sudan</option>
+<option value="34">(+34) Spain</option>
+<option value="94">(+94) Sri Lanka</option>
+<option value="249">(+249) Sudan</option>
+<option value="597">(+597) Suriname</option>
+<option value="47">(+47) Svalbard And Jan Mayen Islands</option>
+<option value="268">(+268) Swaziland</option>
+<option value="46">(+46) Sweden</option>
+<option value="41">(+41) Switzerland</option>
+<option value="963">(+963) Syria</option>
+<option value="886">(+886) Taiwan</option>
+<option value="992">(+992) Tajikistan</option>
+<option value="255">(+255) Tanzania</option>
+<option value="66">(+66) Thailand</option>
+<option value="228">(+228) Togo</option>
+<option value="690">(+690) Tokelau</option>
+<option value="676">(+676) Tonga</option>
+<option value="1868">(+1868) Trinidad And Tobago</option>
+<option value="216">(+216) Tunisia</option>
+<option value="90">(+90) Turkey</option>
+<option value="7370">(+7370) Turkmenistan</option>
+<option value="1649">(+1649) Turks And Caicos Islands</option>
+<option value="688">(+688) Tuvalu</option>
+<option value="256">(+256) Uganda</option>
+<option value="380">(+380) Ukraine</option>
+<option value="971">(+971) United Arab Emirates</option>
+<option value="44">(+44) United Kingdom</option>
+<option value="1">(+1) United States</option>
+<option value="1">(+1) United States Minor Outlying Islands</option>
+<option value="598">(+598) Uruguay</option>
+<option value="998">(+998) Uzbekistan</option>
+<option value="678">(+678) Vanuatu</option>
+<option value="39">(+39) Vatican City State (Holy See)</option>
+<option value="58">(+58) Venezuela</option>
+<option value="84">(+84) Vietnam</option>
+<option value="1284">(+1284) Virgin Islands (British)</option>
+<option value="1340">(+1340) Virgin Islands (US)</option>
+<option value="681">(+681) Wallis And Futuna Islands</option>
+<option value="212">(+212) Western Sahara</option>
+<option value="967">(+967) Yemen</option>
+<option value="38">(+38) Yugoslavia</option>
+<option value="260">(+260) Zambia</option>
+<option value="263">(+263) Zimbabwe</option>
+</select>
+                    <input class="form-control text-box single-line" data-val="true" data-val-length="The field Contact Mobile Number must be a string with a maximum length of 10." data-val-length-max="10" data-val-regex="Please enter a valid mobile number." data-val-regex-pattern="^(\d{10})$" id="InfAccount_BrandList_4a35a944-1be0-46cf-af61-c2d1a0d95fb2__Contact_Phone" maxlength="10" name="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Phone" placeholder="Contact Mobile Number" style="width:57%; display:inline-block" type="text" value="" />
+                </div>
+                <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.BrandList[4a35a944-1be0-46cf-af61-c2d1a0d95fb2].Contact_Phone" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-md-6 col-sm-12">
+                <button type="button" id="93faec2f69a94c17a1934bcca8b843d4" class="btn btn-danger smallButton btnDeleteBrand" title="Delete">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <hr />
+    </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-12">
+                            <button type="button" id="btnAddBrand" class="btn btn-primary smallButton" title="Add New">
+                                <i class="fa fa-plus-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        setRulesOnHasBrands();
+
+        $('#chkHasBrands').checkboxpicker({
+            offLabel: 'No',
+            onLabel: 'Yes',
+            //offIconCls: "fa fa-thumbs-down",
+            //onIconCls: "fa fa-thumbs-up"
+        });
+
+        function setRulesOnHasBrands() {
+            var showDivBrands = 'True';
+            //alert(showDivBrands);
+            if (showDivBrands === "True") {
+                $("#divAccountBrands").show();               
+            }
+            else {
+                $("#divAccountBrands").hide();
+            }
+        }
+
+        $('#chkHasBrands').change(function () {
+            if ($(this).prop("checked") == true) {
+                $("#divAccountBrands").show(500);               
+            }
+            else {
+                $("#divAccountBrands").hide(500);
+            }
+        });
+
+        $('#btnAddBrand').click(function () {
+            if ($('#infAccountDetailsForm').valid()) {
+                $.ajax({
+                    type: "GET",
+                    url: '/Influencer/AddInviteBrand',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        $(response).hide().appendTo("#accountBrands").fadeIn(1000);
+                        $("form").removeData("validator");
+                        $("form").removeData("unobtrusiveValidation");
+                        $.validator.unobtrusive.parse($("form"));
+                    },
+                    error: function (x) {
+                        alert("Error occured!!");
+                    }
+                });
+            }
+        });
+
+        $(document).on('click', '.btnDeleteBrand', function () {
+            if (confirm("Are you sure you want to remove this record?")) {
+                var uniqueID = $(this).attr("id");
+                var brandDiv = $("#brand-" + uniqueID);
+                brandDiv.fadeOut(500, function () {
+                    $(this).remove();
+                });
+            }
+        });
+    });
+</script>
+
+
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+    <div class="col-md-12 col-sm-12">
+        <strong>Do you have Manager/ Agency Details? </strong>
+<input checked="checked" id="chkHasManager" name="InfAccount.Has_Manager" type="checkbox" value="true" /><input name="InfAccount.Has_Manager" type="hidden" value="false" />    </div>
+</div>
+
+
+
+<div id="divAccountManager">
+    <div class="col-md-12 col-sm-12">
+        <div class="panel panel-info ">
+            <div class="panel-heading">
+                <h4 class="panel-title panel-header">
+                    <button type="button" class="btn-link" data-toggle="collapse" data-target="#collapseManager"><i class="fa fa-chevron-down"></i></button>
+                    Manager/ Agency Details
+                </h4>
+            </div>
+            <div id="collapseManager" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-6">
+                            <label class="control-label" for="InfAccount_AccountDetail_Manager_Name">Full Name</label>
+                            <span class="color-red">*</span>
+
+                            <input class="form-control text-box single-line" data-val="true" data-val-length="The field Full Name must be a string with a maximum length of 100." data-val-length-max="100" data-val-regex="Special characters are not allowed." data-val-regex-pattern="^([\w ]+)$" id="InfAccount_AccountDetail_Manager_Name" maxlength="100" name="InfAccount.AccountDetail.Manager_Name" placeholder="Manager/ Agency Name" type="text" value="Sara manager" />
+                            <span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.AccountDetail.Manager_Name" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label class="control-label" for="InfAccount_AccountDetail_Manager_Email">Email</label>
+<input class="form-control text-box single-line" data-val="true" data-val-length="The field Email must be a string with a maximum length of 50." data-val-length-max="50" data-val-regex="Please enter a valid e-mail address." data-val-regex-pattern="^[\w\+-]+(\.[\w\+-]+)*@[a-z0-9-]+(\.[a-z0-9]+)*\.([a-z]{2,4})$" id="InfAccount_AccountDetail_Manager_Email" maxlength="50" name="InfAccount.AccountDetail.Manager_Email" placeholder="Manager/ Agency Email Address" type="text" value="sara@gmail.com" /><span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.AccountDetail.Manager_Email" data-valmsg-replace="true"></span>                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label class="control-label" for="InfAccount_AccountDetail_Manager_Phone">Mobile Number</label>
+                                <div>
+                                    <select class="form-control" id="InfAccount_AccountDetail_Manager_Phone_Code" name="InfAccount.AccountDetail.Manager_Phone_Code" style="width:40%; display:inline-block"><option value="">--Please Select--</option>
+<option value="93">(+93) Afghanistan</option>
+<option value="355">(+355) Albania</option>
+<option value="213">(+213) Algeria</option>
+<option value="1684">(+1684) American Samoa</option>
+<option value="376">(+376) Andorra</option>
+<option value="244">(+244) Angola</option>
+<option value="1264">(+1264) Anguilla</option>
+<option value="0">(+0) Antarctica</option>
+<option value="1268">(+1268) Antigua And Barbuda</option>
+<option value="54">(+54) Argentina</option>
+<option value="374">(+374) Armenia</option>
+<option value="297">(+297) Aruba</option>
+<option value="61">(+61) Australia</option>
+<option value="43">(+43) Austria</option>
+<option value="994">(+994) Azerbaijan</option>
+<option value="1242">(+1242) Bahamas The</option>
+<option value="973">(+973) Bahrain</option>
+<option value="880">(+880) Bangladesh</option>
+<option value="1246">(+1246) Barbados</option>
+<option value="375">(+375) Belarus</option>
+<option value="32">(+32) Belgium</option>
+<option value="501">(+501) Belize</option>
+<option value="229">(+229) Benin</option>
+<option value="1441">(+1441) Bermuda</option>
+<option value="975">(+975) Bhutan</option>
+<option value="591">(+591) Bolivia</option>
+<option value="387">(+387) Bosnia and Herzegovina</option>
+<option value="267">(+267) Botswana</option>
+<option value="0">(+0) Bouvet Island</option>
+<option value="55">(+55) Brazil</option>
+<option value="246">(+246) British Indian Ocean Territory</option>
+<option value="673">(+673) Brunei</option>
+<option value="359">(+359) Bulgaria</option>
+<option value="226">(+226) Burkina Faso</option>
+<option value="257">(+257) Burundi</option>
+<option value="855">(+855) Cambodia</option>
+<option value="237">(+237) Cameroon</option>
+<option value="1">(+1) Canada</option>
+<option value="238">(+238) Cape Verde</option>
+<option value="1345">(+1345) Cayman Islands</option>
+<option value="236">(+236) Central African Republic</option>
+<option value="235">(+235) Chad</option>
+<option value="56">(+56) Chile</option>
+<option value="86">(+86) China</option>
+<option value="61">(+61) Christmas Island</option>
+<option value="672">(+672) Cocos (Keeling) Islands</option>
+<option value="57">(+57) Colombia</option>
+<option value="269">(+269) Comoros</option>
+<option value="242">(+242) Republic Of The Congo</option>
+<option value="242">(+242) Democratic Republic Of The Congo</option>
+<option value="682">(+682) Cook Islands</option>
+<option value="506">(+506) Costa Rica</option>
+<option value="225">(+225) Cote D&#39;Ivoire (Ivory Coast)</option>
+<option value="385">(+385) Croatia (Hrvatska)</option>
+<option value="53">(+53) Cuba</option>
+<option value="357">(+357) Cyprus</option>
+<option value="420">(+420) Czech Republic</option>
+<option value="45">(+45) Denmark</option>
+<option value="253">(+253) Djibouti</option>
+<option value="1767">(+1767) Dominica</option>
+<option value="1809">(+1809) Dominican Republic</option>
+<option value="670">(+670) East Timor</option>
+<option value="593">(+593) Ecuador</option>
+<option value="20">(+20) Egypt</option>
+<option value="503">(+503) El Salvador</option>
+<option value="240">(+240) Equatorial Guinea</option>
+<option value="291">(+291) Eritrea</option>
+<option value="372">(+372) Estonia</option>
+<option value="251">(+251) Ethiopia</option>
+<option value="61">(+61) External Territories of Australia</option>
+<option value="500">(+500) Falkland Islands</option>
+<option value="298">(+298) Faroe Islands</option>
+<option value="679">(+679) Fiji Islands</option>
+<option value="358">(+358) Finland</option>
+<option value="33">(+33) France</option>
+<option value="594">(+594) French Guiana</option>
+<option value="689">(+689) French Polynesia</option>
+<option value="0">(+0) French Southern Territories</option>
+<option value="241">(+241) Gabon</option>
+<option value="220">(+220) Gambia The</option>
+<option value="995">(+995) Georgia</option>
+<option value="49">(+49) Germany</option>
+<option value="233">(+233) Ghana</option>
+<option value="350">(+350) Gibraltar</option>
+<option value="30">(+30) Greece</option>
+<option value="299">(+299) Greenland</option>
+<option value="1473">(+1473) Grenada</option>
+<option value="590">(+590) Guadeloupe</option>
+<option value="1671">(+1671) Guam</option>
+<option value="502">(+502) Guatemala</option>
+<option value="44">(+44) Guernsey and Alderney</option>
+<option value="224">(+224) Guinea</option>
+<option value="245">(+245) Guinea-Bissau</option>
+<option value="592">(+592) Guyana</option>
+<option value="509">(+509) Haiti</option>
+<option value="0">(+0) Heard and McDonald Islands</option>
+<option value="504">(+504) Honduras</option>
+<option value="852">(+852) Hong Kong S.A.R.</option>
+<option value="36">(+36) Hungary</option>
+<option value="354">(+354) Iceland</option>
+<option selected="selected" value="91">(+91) India</option>
+<option value="62">(+62) Indonesia</option>
+<option value="98">(+98) Iran</option>
+<option value="964">(+964) Iraq</option>
+<option value="353">(+353) Ireland</option>
+<option value="972">(+972) Israel</option>
+<option value="39">(+39) Italy</option>
+<option value="1876">(+1876) Jamaica</option>
+<option value="81">(+81) Japan</option>
+<option value="44">(+44) Jersey</option>
+<option value="962">(+962) Jordan</option>
+<option value="7">(+7) Kazakhstan</option>
+<option value="254">(+254) Kenya</option>
+<option value="686">(+686) Kiribati</option>
+<option value="850">(+850) Korea North</option>
+<option value="82">(+82) Korea South</option>
+<option value="965">(+965) Kuwait</option>
+<option value="996">(+996) Kyrgyzstan</option>
+<option value="856">(+856) Laos</option>
+<option value="371">(+371) Latvia</option>
+<option value="961">(+961) Lebanon</option>
+<option value="266">(+266) Lesotho</option>
+<option value="231">(+231) Liberia</option>
+<option value="218">(+218) Libya</option>
+<option value="423">(+423) Liechtenstein</option>
+<option value="370">(+370) Lithuania</option>
+<option value="352">(+352) Luxembourg</option>
+<option value="853">(+853) Macau S.A.R.</option>
+<option value="389">(+389) Macedonia</option>
+<option value="261">(+261) Madagascar</option>
+<option value="265">(+265) Malawi</option>
+<option value="60">(+60) Malaysia</option>
+<option value="960">(+960) Maldives</option>
+<option value="223">(+223) Mali</option>
+<option value="356">(+356) Malta</option>
+<option value="44">(+44) Man (Isle of)</option>
+<option value="692">(+692) Marshall Islands</option>
+<option value="596">(+596) Martinique</option>
+<option value="222">(+222) Mauritania</option>
+<option value="230">(+230) Mauritius</option>
+<option value="269">(+269) Mayotte</option>
+<option value="52">(+52) Mexico</option>
+<option value="691">(+691) Micronesia</option>
+<option value="373">(+373) Moldova</option>
+<option value="377">(+377) Monaco</option>
+<option value="976">(+976) Mongolia</option>
+<option value="1664">(+1664) Montserrat</option>
+<option value="212">(+212) Morocco</option>
+<option value="258">(+258) Mozambique</option>
+<option value="95">(+95) Myanmar</option>
+<option value="264">(+264) Namibia</option>
+<option value="674">(+674) Nauru</option>
+<option value="977">(+977) Nepal</option>
+<option value="599">(+599) Netherlands Antilles</option>
+<option value="31">(+31) Netherlands The</option>
+<option value="687">(+687) New Caledonia</option>
+<option value="64">(+64) New Zealand</option>
+<option value="505">(+505) Nicaragua</option>
+<option value="227">(+227) Niger</option>
+<option value="234">(+234) Nigeria</option>
+<option value="683">(+683) Niue</option>
+<option value="672">(+672) Norfolk Island</option>
+<option value="1670">(+1670) Northern Mariana Islands</option>
+<option value="47">(+47) Norway</option>
+<option value="968">(+968) Oman</option>
+<option value="92">(+92) Pakistan</option>
+<option value="680">(+680) Palau</option>
+<option value="970">(+970) Palestinian Territory Occupied</option>
+<option value="507">(+507) Panama</option>
+<option value="675">(+675) Papua new Guinea</option>
+<option value="595">(+595) Paraguay</option>
+<option value="51">(+51) Peru</option>
+<option value="63">(+63) Philippines</option>
+<option value="0">(+0) Pitcairn Island</option>
+<option value="48">(+48) Poland</option>
+<option value="351">(+351) Portugal</option>
+<option value="1787">(+1787) Puerto Rico</option>
+<option value="974">(+974) Qatar</option>
+<option value="262">(+262) Reunion</option>
+<option value="40">(+40) Romania</option>
+<option value="70">(+70) Russia</option>
+<option value="250">(+250) Rwanda</option>
+<option value="290">(+290) Saint Helena</option>
+<option value="1869">(+1869) Saint Kitts And Nevis</option>
+<option value="1758">(+1758) Saint Lucia</option>
+<option value="508">(+508) Saint Pierre and Miquelon</option>
+<option value="1784">(+1784) Saint Vincent And The Grenadines</option>
+<option value="684">(+684) Samoa</option>
+<option value="378">(+378) San Marino</option>
+<option value="239">(+239) Sao Tome and Principe</option>
+<option value="966">(+966) Saudi Arabia</option>
+<option value="221">(+221) Senegal</option>
+<option value="381">(+381) Serbia</option>
+<option value="248">(+248) Seychelles</option>
+<option value="232">(+232) Sierra Leone</option>
+<option value="65">(+65) Singapore</option>
+<option value="421">(+421) Slovakia</option>
+<option value="386">(+386) Slovenia</option>
+<option value="44">(+44) Smaller Territories of the UK</option>
+<option value="677">(+677) Solomon Islands</option>
+<option value="252">(+252) Somalia</option>
+<option value="27">(+27) South Africa</option>
+<option value="0">(+0) South Georgia</option>
+<option value="211">(+211) South Sudan</option>
+<option value="34">(+34) Spain</option>
+<option value="94">(+94) Sri Lanka</option>
+<option value="249">(+249) Sudan</option>
+<option value="597">(+597) Suriname</option>
+<option value="47">(+47) Svalbard And Jan Mayen Islands</option>
+<option value="268">(+268) Swaziland</option>
+<option value="46">(+46) Sweden</option>
+<option value="41">(+41) Switzerland</option>
+<option value="963">(+963) Syria</option>
+<option value="886">(+886) Taiwan</option>
+<option value="992">(+992) Tajikistan</option>
+<option value="255">(+255) Tanzania</option>
+<option value="66">(+66) Thailand</option>
+<option value="228">(+228) Togo</option>
+<option value="690">(+690) Tokelau</option>
+<option value="676">(+676) Tonga</option>
+<option value="1868">(+1868) Trinidad And Tobago</option>
+<option value="216">(+216) Tunisia</option>
+<option value="90">(+90) Turkey</option>
+<option value="7370">(+7370) Turkmenistan</option>
+<option value="1649">(+1649) Turks And Caicos Islands</option>
+<option value="688">(+688) Tuvalu</option>
+<option value="256">(+256) Uganda</option>
+<option value="380">(+380) Ukraine</option>
+<option value="971">(+971) United Arab Emirates</option>
+<option value="44">(+44) United Kingdom</option>
+<option value="1">(+1) United States</option>
+<option value="1">(+1) United States Minor Outlying Islands</option>
+<option value="598">(+598) Uruguay</option>
+<option value="998">(+998) Uzbekistan</option>
+<option value="678">(+678) Vanuatu</option>
+<option value="39">(+39) Vatican City State (Holy See)</option>
+<option value="58">(+58) Venezuela</option>
+<option value="84">(+84) Vietnam</option>
+<option value="1284">(+1284) Virgin Islands (British)</option>
+<option value="1340">(+1340) Virgin Islands (US)</option>
+<option value="681">(+681) Wallis And Futuna Islands</option>
+<option value="212">(+212) Western Sahara</option>
+<option value="967">(+967) Yemen</option>
+<option value="38">(+38) Yugoslavia</option>
+<option value="260">(+260) Zambia</option>
+<option value="263">(+263) Zimbabwe</option>
+</select>
+                                    <input class="form-control text-box single-line" data-val="true" data-val-length="The field Mobile Number must be a string with a maximum length of 10." data-val-length-max="10" data-val-regex="Please enter a valid mobile number." data-val-regex-pattern="^(\d{10})$" id="InfAccount_AccountDetail_Manager_Phone" maxlength="10" name="InfAccount.AccountDetail.Manager_Phone" placeholder="Mobile Number" style="width:57%; display:inline-block" type="text" value="" />
+                                </div>
+<span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.AccountDetail.Manager_Phone" data-valmsg-replace="true"></span>                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label class="control-label" for="InfAccount_AccountDetail_Manager_Website">Website</label>
+<input class="form-control text-box single-line" data-val="true" data-val-length="The field Website must be a string with a maximum length of 200." data-val-length-max="200" id="InfAccount_AccountDetail_Manager_Website" maxlength="200" name="InfAccount.AccountDetail.Manager_Website" placeholder="Manager/ Agency Website (Starting with http:// or https://)" type="url" value="" /><span class="field-validation-valid text-danger" data-valmsg-for="InfAccount.AccountDetail.Manager_Website" data-valmsg-replace="true"></span>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $.validator.unobtrusive.parse($("form"));
+        setRulesOnHasManager();
+
+        $('#chkHasManager').checkboxpicker({
+            offLabel: 'No',
+            onLabel: 'Yes',
+            //offIconCls: "fa fa-thumbs-down",
+            //onIconCls: "fa fa-thumbs-up"
+        });
+
+        function setRulesOnHasManager() {
+            var showDivManager = 'True';
+            //alert(showDivManager);
+            if (showDivManager === "True") {
+                $("#divAccountManager").show();
+                $("#InfAccount_AccountDetail_Manager_Name").rules("add", {
+                    required: true
+                });
+            }
+            else {
+                $("#divAccountManager").hide();
+            }
+        }
+
+        $('#chkHasManager').change(function () {
+            if ($(this).prop("checked") == true) {
+                $("#divAccountManager").show(500);
+                $("#InfAccount_AccountDetail_Manager_Name").rules("add", {
+                    required: true
+                });
+            }
+            else {
+                $("#divAccountManager").hide(500);
+            }
+        });
+    });
+</script>
+
+
+
+                                </div>                                
+
+                                <div class="col-md-12 col-sm-12">
+                                    
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="spanWrongBrandName" style="display:none">
+                                                <div class="text-danger">Duplicate Brand Names found. Please select a different Brand Name.</div>
+                                                <br />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <input type="submit" value="Save" class="btn btn-danger" />
+                                            <a class="btn btn-default" href="/Influencer/Accounts">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</form>                        <div id="popupSearchAccount">
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            <div id="popupmessage">
+            </div>
+            <div id="loadermessage" style="display: none">
+                <div id="LoaderModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="false">
+    <div class="modal-dialog" style="width:150px">        
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="loader"></div>
+                <div class="text-center"><b>Please wait...</b></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+            <div id="alertmessage">
+                
+
+
+
+
+
+            </div>
+        </div>
+        <footer>
+            <section class="footers">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Company</h3>
+                <ul>
+                    
+                    <li><a href="javascript:void(0)" class="contactPopup">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/TermsAndConditions" target="_blank">Terms and Conditions</a></li>
+                    <li><a href="/PrivacyPolicy" target="_blank">Privacy Policy</a></li>
+                    <li><a href="/Faqs" target="_blank">FAQ&#39;s</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Follow Us</h3>
+                <div>
+                    <a href="https://www.facebook.com/droommedia/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://twitter.com/droommedia" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/droom-media/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/droommedia/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="box-footers">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:dm@droommedia.com"><i class="fa fa-envelope"></i> Brand: dm@droommedia.com</a></li>
+                    <li><a href="mailto:collab@droommedia.com"><i class="fa fa-envelope"></i> Influencer: collab@droommedia.com</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=918800798484&amp;text=&amp;source=&amp;data=" target="_blank"><i class="fa fa-whatsapp" style="color: green;"></i> Call/Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <div class="row">
+        <p class="text-center">© All rights reserved by DroomMedia</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 div-payment-box">            
+                <ul class="ul-payment-box">
+                    <li><i class="fa fa-cc-visa fa-2x" style="color: #0157a2"></i></li>
+                    <li><i class="fa fa-cc-mastercard fa-2x" style="color: #0a3a82"></i></li>                    
+                    <li><i class="fa fa-cc-paypal fa-2x" style="color: #253b80"></i></li>
+                    <li><i class="fa fa-cc-stripe fa-2x" style="color: #00afe1"></i></li>
+                </ul>            
+        </div>
+    </div>   
+</section>
+        </footer>
+    </div>
+    <script src="./Scripts/bootstrap.js"></script>
+<script src="./Scripts/respond.js"></script>
+
+    <script src="./Scripts/jquery.validate.js"></script>
+<script src="./Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="./Scripts/jquery.unobtrusive-ajax.js"></script>
+
+    
+    <script type="text/javascript" src="./Scripts/dmapp/appDM.js"></script>
+    <script type="text/javascript" src="./Scripts/bootstrap_plugin/sweetalert.min.js"></script>
+    <script src="./Scripts/bootstrap_plugin/bootstrap-checkbox.js"></script>
+<script src="./Scripts/bootstrap_plugin/bootstrap-multiselect.js"></script>
+<script src="./Scripts/bootstrap_plugin/bootstrap-table.js"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            hideAppLoader();
+            setRulesOnUploadImage();
+            $('[data-toggle="popover"]').popover();
+
+            function setRulesOnUploadImage() {
+                var accountID = '1';
+                if (accountID == 0) {
+                    $("#InfAccount_UploadImage").rules("add", {
+                        required: true,
+                        messages: {
+                            required: "The Image file is required."
+                        }
+                    });
+                }
+            }
+
+            $('#infAccountDetailsForm').submit(function () {
+                var isValidBrandNames = checkBrandNames();
+                if (!isValidBrandNames) {
+                    return false;
+                }
+                if ($('#infAccountDetailsForm').valid()) {
+                    showAppLoader();
+                }
+            });
+
+            $('#drpInfCategory').multiselect({
+                nonSelectedText: '--Please Select--',
+                numberDisplayed: 2,
+                maxHeight: 150
+            });
+
+            $('#drpInfLanguage').multiselect({
+                nonSelectedText: '--Please Select--',
+                numberDisplayed: 2,
+                maxHeight: 150,
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true
+            });
+
+            $(document).on('click', '#btnSearchAccount', function () {
+                //alert('btnSearchAccount clicked');
+                $.ajax({
+                    type: "GET",
+                    url: '/Influencer/GetAccountPopup',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        $('#popupSearchAccount').html(response);
+                        $("#influencerTable").bootstrapTable();
+                    },
+                    error: function () {
+                        alert("Error occured!!");
+                    }
+                });
+            });
+
+            $('#drpCountry').change(function (event) {
+                var selectedCountry = $(this).val();
+                $.ajax({
+                    type: "GET",
+                    url: '/Helper/GetStates',
+                    data: { country: selectedCountry },
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        var select = $('#drpState');
+                        select.empty();
+                        select.append($('<option/>', { value: "", text: "--Please Select--" }));
+
+                        $.each(response, function (index, itemData) {
+                            select.append($('<option/>', { value: itemData.Value, text: itemData.Text }));
+                        });
+                    },
+                    error: function (x) {
+                        alert("Error occured!!");
+                    }
+                });
+            });
+
+            $('#drpState').change(function (event, selectedCity) {
+                var selectedState = $(this).val();
+                if (selectedState) {
+                    $.ajax({
+                        type: "GET",
+                        url: '/Helper/GetCities',
+                        data: { state: selectedState },
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            var select = $('#drpCity');
+                            select.empty();
+                            select.append($('<option/>', { value: "", text: "--Please Select--" }));
+
+                            $.each(response, function (index, itemData) {
+                                select.append($('<option/>', { value: itemData.Value, text: itemData.Text }));
+                            });
+                            if (selectedCity) {
+                                $("#drpCity").val(selectedCity);
+                            }
+                        },
+                        error: function (x) {
+                            alert("Error occured!!");
+                        }
+                    });
+                }
+            });
+
+            function checkBrandNames() {
+                var isValid = true;
+                var brandNames = new Array();
+                $("input.inf-brand-name").each(function () {
+                    brandNames.push($(this).val());
+                });
+                if (brandNames && brandNames.length > 0) {
+                    var uniqueBrandNames = brandNames.filter(function (itm, i, a) {
+                        return i == a.indexOf(itm);
+                    });
+                    if (brandNames.length != uniqueBrandNames.length) {
+                        isValid = false;
+                        $(".spanWrongBrandName").show();
+                    }
+                }
+                return isValid;
+            }
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("document ready");
+            $('.contactPopup').click(function () {
+                //alert("contact popup");
+                $.ajax({
+                    type: "GET",
+                    url: '/Home/Contact',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        $('#popupmessage').html(response);
+                    },
+                    error: function () {
+                        alert("Error occured!!");
+                    }
+                });
+            });
+
+            $(document).on('click', '.loginPopup', function () {
+                //alert("login popup");
+                OpenLoginPopup();
+            });
+
+            $('.registerPopup').click(function () {
+                //alert("register popup");
+                OpenRegisterPopup();
+            });
+
+            $(document).on('change', '#AppSelectedCurrency', function () {
+                var selectedCurrency = $(this).val();
+                $.ajax({
+                    type: "GET",
+                    url: '/Home/SetCurrency',
+                    data: { currency: selectedCurrency },
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                       
+                    },
+                    error: function () {
+                        alert("Error occured!!");
+                    }
+                });
+            });
+        });
+
+        function OpenRegisterPopup(roleType) {
+            $.ajax({
+                type: "GET",
+                url: '/Account/RegisterPopup',
+                data: { roleType: roleType },
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    $('#popupmessage').html(response);
+                },
+                error: function (x) {
+                    alert("Error occured!!");
+                }
+            });
+        }
+
+        function OpenLoginPopup() {
+            $.ajax({
+                type: "GET",
+                url: '/Account/LoginPopup',
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    $('#popupmessage').html(response);
+                },
+                error: function (x) {
+                    alert("Error occured!!");
+                }
+            });
+        }
+    </script>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"f1a76fda8f904bc4b861b15cf79ad665"}
+</script>
+<script type="text/javascript" src="http://localhost:1513/6a8562aba6744b94a61a22c03f9ef441/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
